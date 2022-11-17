@@ -9,7 +9,7 @@ module.exports = {
     screens: {
       mobile: "640",
       tablet: "768px",
-      desktop: "1024px",
+      desktop: "1280px",
     },
     container: {
       center: true,
