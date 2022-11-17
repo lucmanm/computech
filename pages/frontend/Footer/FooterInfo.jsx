@@ -3,8 +3,8 @@ import React from "react";
 export const FooterInfo = () => {
   return (
     <div className="bg-gray-100">
-      <div className="tablet:flex-row desktop:container desktop:items-stretch flex flex-col">
-        <div className="tablet:flex-1 flex items-center border">
+      <div className="flex flex-col tablet:flex-row desktop:container desktop:items-stretch">
+        <div className="flex items-center tablet:flex-1 ">
           <img
             className="mx-auto rounded-lg"
             src="https://compu-tech.com.sa/ecdata/stores/FIZZEV7610/image/data/Computech%20Logo/App-Icon-256x256.png.jpg"
@@ -13,8 +13,8 @@ export const FooterInfo = () => {
             height="200"
           />
         </div>
-        <div className="tablet:flex-1 border px-6 pb-6">
-          <ul className="tablet:prose-li:place-content-start prose prose-ul:list-none prose-li:flex prose-li:flex-row prose-li:place-content-center prose-li:text-sm">
+        <div className="px-6  pb-6 tablet:flex-1">
+          <ul className="prose prose-ul:list-none prose-li:flex prose-li:flex-row prose-li:place-content-center prose-li:text-sm tablet:prose-li:place-content-start">
             <li>
               <h3>CONTACT INFO</h3>
             </li>
@@ -36,9 +36,9 @@ export const FooterInfo = () => {
             </li>
           </ul>
         </div>
-        <div className="tablet:flex-1 flex">
-          <div className="tablet:flex-1 grow border px-6 pb-6">
-            <ul className="tablet:prose-li:place-content-start prose prose-ul:list-none prose-li:flex prose-li:flex-row prose-li:place-content-center prose-li:text-sm">
+        <div className="flex tablet:flex-1">
+          <div className="grow px-6  pb-6 tablet:flex-1">
+            <ul className="prose prose-ul:list-none prose-li:flex prose-li:flex-row prose-li:place-content-center prose-li:text-sm tablet:prose-li:place-content-start">
               <li>
                 <h3>COMPANY</h3>
               </li>
@@ -49,8 +49,8 @@ export const FooterInfo = () => {
               <li>Contact Us</li>
             </ul>
           </div>
-          <div className="tablet:flex-1 grow border px-6 pb-6">
-            <ul className="tablet:prose-li:place-content-start prose prose-ul:list-none prose-li:flex prose-li:flex-row prose-li:place-content-center prose-li:text-sm">
+          <div className="grow px-6  pb-6 tablet:flex-1">
+            <ul className="prose prose-ul:list-none prose-li:flex prose-li:flex-row prose-li:place-content-center prose-li:text-sm tablet:prose-li:place-content-start">
               <li>
                 <h3>HELP</h3>
               </li>
