@@ -3,7 +3,7 @@ import React from "react";
 const Subscribe = () => {
   return (
     <div className="bg-black text-white">
-      <div className="tablet:container flex flex-row flex-wrap items-center justify-center p-7">
+      <div className="dekstop:container flex flex-row flex-wrap items-center justify-center border border-white p-7">
         <div>
           <span>
             <svg

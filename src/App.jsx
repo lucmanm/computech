@@ -1,5 +1,5 @@
-import { Header, IconNavigation } from "../pages/frontend/Header/";
-import { Products } from "../pages/frontend/Products";
+import { Header } from "../pages/frontend/Header/";
+import { Products, IconNavigation } from "../pages/frontend/";
 import { Footer } from "../pages/frontend/footer/Footer";
 import "./App.css";
 
