@@ -11,12 +11,10 @@ export const Header = () => {
           Free Shipping all Over Saudi Arabia
         </div>
         <LogoAndSearch />
-        <div className="relative ml-56 max-w-7xl">
-          <div className=" mx-auto flex min-w-full flex-row  items-center border border-black">
-            <FrontSideNav />
-            <Navigationbar />
-            <AccountLogin />
-          </div>
+        <div className="flex flex-row  items-center  w-screen  desktop:container">
+        <FrontSideNav/>
+         <Navigationbar/>
+         <AccountLogin/>
         </div>
       </div>
     </>
