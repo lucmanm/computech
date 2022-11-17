@@ -4,7 +4,7 @@ export const Navigationbar = () => {
   return (
     <>
       <div className="grow">
-        <ul className="text-md flex cursor-pointer flex-row flex-wrap text-center font-medium text-black">
+        <ul className="text-md text-blac flex cursor-pointer flex-row flex-wrap text-center font-medium">
           <li className="group py-2 px-2">
             <div className="group-hover:rounded-t group-hover:bg-blue-900">
               <span className="border-b-4 border-gray-400 group-hover:border-blue-900 group-hover:text-white">

@@ -3,7 +3,7 @@ import { Icons } from "../assets/data/data";
 export const AccountLogin = () => {
   return (
     <div className="grow">
-      <div className="relative flex flex-row space-x-4 px-2 text-blue-900">
+      <div className="relative flex flex-row place-content-end space-x-4 px-2 text-blue-900">
         <div className="flex flex-row">
           {Icons.languageIcon}
           <span className=" font-medium">English</span>

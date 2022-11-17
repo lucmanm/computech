@@ -11,7 +11,7 @@ export const Header = () => {
           Free Shipping all Over Saudi Arabia
         </div>
         <LogoAndSearch />
-        <div className="flex w-screen  flex-row  items-center  py-1  desktop:container">
+        <div className="z-50 flex  w-screen  flex-row  items-center  py-1 desktop:container">
           <FrontSideNav />
           <Navigationbar />
           <AccountLogin />
