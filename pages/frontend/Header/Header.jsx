@@ -11,7 +11,7 @@ export const Header = () => {
           Free Shipping all Over Saudi Arabia
         </div>
         <LogoAndSearch />
-        <div className="mx-auto flex flex-row  items-center  w-screen  desktop:container">
+        <div className="flex flex-row  items-center  w-screen  desktop:container">
         <FrontSideNav/>
          <Navigationbar/>
          <AccountLogin/>
