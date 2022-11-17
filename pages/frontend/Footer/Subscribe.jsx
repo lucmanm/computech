@@ -31,12 +31,12 @@ const Subscribe = () => {
               type="text"
               name="Subscribe"
               id=""
-              className="w-full rounded-full"
+              className="w-full rounded-full text-black"
             />
           </span>
           <span>
             <input
-              className="h-full cursor-pointer rounded-full bg-blue-900 px-6 font-semibold hover:bg-blue-700"
+              className="h-full cursor-pointer rounded-full bg-blue-900 px-6 font-semibold  hover:bg-blue-700"
               type="button"
               value="Subscribe"
             />

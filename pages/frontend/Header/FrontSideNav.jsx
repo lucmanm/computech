@@ -10,7 +10,7 @@ export const FrontSideNav = () => {
       <button className="group relative my-2 flex shrink-0 cursor-pointer items-center justify-center rounded bg-blue-900 py-3 px-4 text-sm font-semibold uppercase">
         <p className="text-white">Shop By Categories</p>
         <HiMenu className="w-12" />
-        <div className="shadow-dm absolute top-full mt-2 hidden w-max min-w-full rounded bg-gray-100 text-black group-hover:block">
+        <div className="shadow-dm invisible absolute top-full mt-2 w-max min-w-full rounded bg-gray-100 text-black group-hover:block group-focus:visible">
           <ul className="flex flex-col rounded border border-blue-100 text-left">
             <li className="flex flex-row items-center border-b border-gray-200 p-3 hover:rounded-t hover:bg-gray-200">
               <BiDesktop className="w-12" /> <p>Desktop</p>

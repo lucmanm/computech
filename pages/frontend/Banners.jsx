@@ -1,5 +1,13 @@
 import React from "react";
 
 export const Banners = () => {
-  return <div>Banners</div>;
+  return (
+    <>
+      <div className="flex flex-row desktop:container">
+        <div>
+          <img src="" alt="" />
+        </div>
+      </div>
+    </>
+  );
 };
