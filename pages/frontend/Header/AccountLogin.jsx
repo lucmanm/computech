@@ -6,7 +6,7 @@ export const AccountLogin = () => {
       <div className="relative flex flex-row space-x-4 px-2 text-blue-900">
         <div className="flex flex-row">
           {Icons.languageIcon}
-          <span className=" font-medium">Language</span>
+          <span className=" font-medium">English</span>
         </div>
         <div>{Icons.personIcon}</div>
         <div>{Icons.heartIcon}</div>

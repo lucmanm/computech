@@ -3,7 +3,7 @@ import CompuTechLogo from "../assets/img/CompuTechLogo.png";
 export const LogoAndSearch = () => {
   return (
     <>
-      <div className="relative flex items-center justify-evenly desktop:container">
+      <div className="relative flex items-center justify-evenly py-5 desktop:container">
         <div className="shrink">
           <img src={CompuTechLogo} alt="" width={200} />
         </div>
@@ -19,8 +19,8 @@ export const LogoAndSearch = () => {
           <span className="text-blue-900">Need help? Call Us</span>
           <span>+966 56 261 7554</span>
         </div>
-    </div>
-        <div className="border-b text-black shadow border w-screen"></div>
-  </>
+      </div>
+      <div className="w-screen border border-b text-black shadow"></div>
+    </>
   );
 };
