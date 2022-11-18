@@ -20,7 +20,7 @@ export const LogoAndSearch = () => {
           <span>+966 56 261 7554</span>
         </div>
       </div>
-      <div className="w-screen border border-b text-black shadow"></div>
+      <div className="border border-b text-black shadow"></div>
     </>
   );
 };
