@@ -11,8 +11,8 @@ export const ProductComp = () => {
         <img className=" cursor-pointer" src={aioimg} alt="All in one Image" />
         {/* Wishlist, Compare, QuickView */}
         <div className=" absolute top-7 right-7 flex flex-col items-end space-y-1">
-          <button className="invisible relative flex h-9  w-9 flex-row-reverse items-center overflow-hidden truncate rounded-md bg-blue-900 py-1 text-white opacity-0  duration-300 hover:w-32 hover:duration-500 group-hover:visible group-hover:opacity-100 group-hover:duration-300">
-            <span className=" stroke-2 pr-1">{icons.heartIcon}</span>
+          <button className="invisible relative flex h-11  w-11 flex-row-reverse items-center overflow-hidden truncate rounded-md bg-blue-900 py-1 text-white opacity-0  duration-300 hover:w-32 hover:duration-500 group-hover:visible group-hover:opacity-100 group-hover:duration-300">
+            <span className="pr-2">{icons.heartIcon}</span>
             <span className="mx-1 inline-block px-1 text-base font-semibold">
               Wish List
             </span>

@@ -15,29 +15,27 @@ export const icons = {
   languageIcon: <HiLanguage className="h-7 w-7" />,
   emailIcon: <HiOutlineMailOpen className="h-12 w-12" />,
 };
-
-export const categoryIcon = [
-  {
-    title: "Computers",
-    icon: (
-      <HiOutlineComputerDesktop className="my-4 h-10 w-10 cursor-pointer" />
-    ),
-  },
-  {
-    title: "Laptop",
-    icon: <BsLaptop className="my-4 h-10 w-10 cursor-pointer" />,
-  },
-
-  {
-    title: "Printer",
-    icon: <BsPrinter className="my-4 h-10 w-10 cursor-pointer" />,
-  },
-];
-
 export const langauge = {
   english: "English",
   arabic: "عربى",
 };
+
+// export const categoryIcon = {
+//   title: "Computers",
+//   catIcon: (
+//     <HiOutlineComputerDesktop className="my-4 h-10 w-10 cursor-pointer" />
+//   ),
+// };
+//   {
+//     title: "Laptop",
+//     icon: <BsLaptop className="my-4 h-10 w-10 cursor-pointer" />,
+//   },
+
+//   {
+//     title: "Printer",
+//     icon: <BsPrinter className="my-4 h-10 w-10 cursor-pointer" />,
+//   },
+// ];
 
 // export const links = [
 //   {

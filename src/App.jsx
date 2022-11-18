@@ -6,10 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="bg-gray-50">
-      <Header />
-      <IconNavigation />
       <Products />
-      <Footer />
     </div>
   );
 }
