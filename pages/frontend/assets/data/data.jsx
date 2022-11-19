@@ -5,15 +5,15 @@ import {
   BsLaptop,
   BsPrinter,
 } from "react-icons/bs";
-import { HiLanguage } from "react-icons/hi2";
+import { IoLanguage } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import {CiDesktop} from "react-icons/ci"
+import { CiDesktop } from "react-icons/ci"
 
 export const icons = {
   personIcon: <BsPerson className="h-7 w-7" />,
   heartIcon: <BsHeart className="h-7 w-7" />,
   cartIcon: <BsCart2 className="h-7 w-7" />,
-  languageIcon: <HiLanguage className="h-7 w-7" />,
+  languageIcon: <IoLanguage className="h-7 w-7" />,
   emailIcon: <HiOutlineMailOpen className="h-12 w-12" />,
 };
 export const langauge = {
@@ -23,9 +23,10 @@ export const langauge = {
 
 export const categoryIcon = [
   {
-  title: "Computers",
-  icon: <CiDesktop className="my-4 h-10 w-10 cursor-pointer" />,
+    title: "Computers",
+    icon: <CiDesktop className="my-4 h-10 w-10 cursor-pointer" />,
   },
+
   {
     title: "Laptop",
     icon: <BsLaptop className="my-4 h-10 w-10 cursor-pointer" />,

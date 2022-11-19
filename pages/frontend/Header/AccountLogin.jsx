@@ -5,8 +5,9 @@ export const AccountLogin = () => {
     <div className="grow">
       <div className="relative flex flex-row place-content-end items-center space-x-4 px-2 text-blue-900">
         <div className="flex flex-row ">
-          {icons.languageIcon}
+        {icons.languageIcon}
           <button className=" px-1 text-xl font-medium">
+         
             {langauge.arabic}
           </button>
         </div>
