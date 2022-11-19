@@ -5,8 +5,9 @@ import {
   BsLaptop,
   BsPrinter,
 } from "react-icons/bs";
-import { HiLanguage, HiOutlineComputerDesktop } from "react-icons/hi2";
+import { HiLanguage } from "react-icons/hi2";
 import { HiOutlineMailOpen } from "react-icons/hi";
+import {CiDesktop} from "react-icons/ci"
 
 export const icons = {
   personIcon: <BsPerson className="h-7 w-7" />,
@@ -20,22 +21,21 @@ export const langauge = {
   arabic: "عربى",
 };
 
-// export const categoryIcon = {
-//   title: "Computers",
-//   catIcon: (
-//     <HiOutlineComputerDesktop className="my-4 h-10 w-10 cursor-pointer" />
-//   ),
-// };
-//   {
-//     title: "Laptop",
-//     icon: <BsLaptop className="my-4 h-10 w-10 cursor-pointer" />,
-//   },
+export const categoryIcon = [
+  {
+  title: "Computers",
+  icon: <CiDesktop className="my-4 h-10 w-10 cursor-pointer" />,
+  },
+  {
+    title: "Laptop",
+    icon: <BsLaptop className="my-4 h-10 w-10 cursor-pointer" />,
+  },
 
-//   {
-//     title: "Printer",
-//     icon: <BsPrinter className="my-4 h-10 w-10 cursor-pointer" />,
-//   },
-// ];
+  {
+    title: "Printer",
+    icon: <BsPrinter className="my-4 h-10 w-10 cursor-pointer" />,
+  },
+];
 
 // export const links = [
 //   {
