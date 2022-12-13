@@ -2,6 +2,8 @@ import React from "react";
 import { Header } from "../pages/frontend/Header/";
 import { Products, IconNavigation } from "../pages/frontend/";
 import { Footer } from "../pages/frontend/footer/Footer";
+import {Login as CpLogin} from "../pages/frontend/Components/Login"
+import {Register as CpRegister} from "../pages/frontend/Components/Register"
 import {Login} from "../pages/frontend/Pages/Login"
 import "./App.css";
 import { Outlet, Route, Routes } from "react-router-dom";
@@ -13,9 +15,10 @@ function App() {
         <Routes>
           <Route index element={<Products />}></Route>
           <Route path="login" element={<Login />}>
-          <Route index element={<div>Login Here</div>}/>
+          <Route index element={<CpLogin/>}/>
             <Route path='login' element={<div>Login Here</div>}/>
-            <Route path='register' element={<div>Register Here</div>}/>
+            
+            <Route path='register' element={<CpRegister/>}/>
           </Route>
         </Routes>
         <Outlet/>
