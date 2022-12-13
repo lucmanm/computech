@@ -34,24 +34,24 @@ export const Products = () => {
     // displayData = responseData.products.map((prod) => {
     //   return <p key={prod.id}>{prod.title}</p>;
     // });
-
     setProd(responseData.products);
+
   };
   useEffect(() => {
     apiFitch();
   }, []);
 
   return (
-    <div className="grid h-fit grid-cols-2  justify-evenly gap-3 tablet:grid-cols-3 desktop:container desktop:grid-cols-4">
-      {prod.slice(0, 8).map((prodDetails) => (
-        <div className="" key={prodDetails.id}>
-          <div className="group prose relative min-h-fit overflow-hidden rounded-md  bg-white p-7 hover:shadow-md">
-            <span className="absolute top-7 left-7 rounded-md border px-1 ring-1 ring-blue-800">
+    <div className="grid h-fit grid-cols-2  justify-evenly gap-3 tablet:grid-cols-3 desktop:container desktop:grid-cols-5 relative m-10">
+      {prod.slice(0, 5).map(({id, description, price, images: [image1]}) => (
+        <div className="" key={id}>
+          <div className="group prose relative min-h-fit overflow-hidden rounded-md  bg-white p-4 hover:shadow-md">
+            <span className="absolute top-7 left-7 rounded-md border px-1 ring-1 ring-blue-800 z-10">
               New
             </span>
             <img
-              className=" cursor-pointer"
-              src={aioimg}
+              className="relative cursor-pointer w-52 h-52 border"
+              src={image1}
               alt="All in one Image"
             />
             {/* Wishlist, Compare, QuickView */}
@@ -67,14 +67,14 @@ export const Products = () => {
               Category
             </span>
             <h4 className="leading-6 line-clamp-2">
-              {prodDetails.description}
+              {description}
             </h4>
             <span className="block text-lg font-bold">
-              Sr {prodDetails.price}
+              Sr {price}
             </span>
-            <button className="container flex max-w-full justify-between rounded-md bg-blue-900 p-2 text-white hover:bg-blue-700">
+            <button className="container flex max-w-full justify-between rounded-md bg-blue-900 p-1 pl-4 text-white hover:bg-blue-700">
               <span>{icons.cartIcon}</span>
-              <span className=" pr-3">Add to cart</span>
+              <span className=" pr-4">Add to cart</span>
             </button>
           </div>
         </div>

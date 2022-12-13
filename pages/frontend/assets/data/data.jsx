@@ -12,7 +12,7 @@ import { CiDesktop } from "react-icons/ci"
 export const icons = {
   personIcon: <BsPerson className="h-7 w-7" />,
   heartIcon: <BsHeart className="h-7 w-7" />,
-  cartIcon: <BsCart2 className="h-7 w-7" />,
+  cartIcon: <BsCart2 className="h-6 w-6" />,
   languageIcon: <IoLanguage className="h-7 w-7" />,
   emailIcon: <HiOutlineMailOpen className="h-12 w-12" />,
 };

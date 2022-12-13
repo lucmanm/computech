@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { icons, langauge } from "../assets/data/data";
 export const AccountLogin = () => {
   return (
@@ -11,7 +12,7 @@ export const AccountLogin = () => {
             {langauge.arabic}
           </button>
         </div>
-        <div>{icons.personIcon}</div>
+        <div><Link to="/login">{icons.personIcon}</Link></div>
         <div>{icons.heartIcon}</div>
         <div>{icons.cartIcon}</div>
       </div>

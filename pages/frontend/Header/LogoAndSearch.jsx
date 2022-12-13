@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CompuTechLogo from "../assets/img/CompuTechLogo.png";
 export const LogoAndSearch = () => {
   return (
     <>
       <div className="relative flex items-center justify-evenly py-5 desktop:container">
         <div className="shrink">
-          <img src={CompuTechLogo} alt="" width={200} />
+          <Link to="/"><img src={CompuTechLogo} alt="" width={200} /></Link>
         </div>
         <div className="grow px-8">
           <input
