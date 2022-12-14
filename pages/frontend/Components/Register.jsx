@@ -12,15 +12,15 @@ export const Register = () => {
       <div className="mt-10 sm:mt-0">
         <div className="md:grid md:grid-cols-3 md:gap-6">
           <div className="md:col-span-1">
-            <div className="px-4 sm:px-0">
+            <div className="px-4 sm:px-0  ">
               <h2 className="text-lg font-medium leading-6 text-gray-900">Register</h2>
               <p className="mt-1 text-sm text-gray-600">Use a permanent address where you can receive mail.</p>
             </div>
           </div>
           <div className="mt-5 md:col-span-2 md:mt-0">
             <form action="#" method="POST">
-              <div className="overflow-hidden shadow sm:rounded-md">
-                <div className="bg-white px-4 py-5 sm:p-6">
+              <div className="overflow-hidden  sm:rounded-md">
+                <div className=" px-4 py-5 sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
                     <div className="col-span-6 sm:col-span-3">
                       <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
@@ -115,7 +115,7 @@ export const Register = () => {
         </div>
       </div>
 
-      <div className="mt-10 sm:mt-0">
+      <div className="mt-10 sm:mt-0 mb-10">
         <div className="md:grid md:grid-cols-3 md:gap-6">
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
@@ -131,8 +131,8 @@ export const Register = () => {
           </div>
           <div className="mt-5 md:col-span-2 md:mt-0">
             <form action="#" method="POST">
-              <div className="overflow-hidden shadow sm:rounded-md">
-                <div className="space-y-6 bg-white px-4 py-5 sm:p-6">
+              <div className="overflow-hidden  sm:rounded-md">
+                <div className="space-y-6  px-4 py-5 sm:p-6">
                   <fieldset>
                     <legend className="sr-only">By Email</legend>
                     <div className="text-base font-medium text-gray-900" aria-hidden="true">

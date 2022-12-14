@@ -1,5 +1,5 @@
 import React from "react";
-
+import CompuTechLogoTrans from "../assets/img/CompuTechLogoTrans.png"
 export const FooterInfo = () => {
   return (
     <div className="bg-gray-100">
@@ -7,7 +7,7 @@ export const FooterInfo = () => {
         <div className="flex items-center tablet:flex-1 ">
           <img
             className="mx-auto rounded-lg"
-            src="https://compu-tech.com.sa/ecdata/stores/FIZZEV7610/image/data/Computech%20Logo/App-Icon-256x256.png.jpg"
+            src={CompuTechLogoTrans}
             alt=""
             width="200"
             height="200"

@@ -10,7 +10,7 @@ export const LogoAndSearch = () => {
         </div>
         <div className="grow px-8">
           <input
-            className=" min-w-full rounded border border-blue-900 text-base caret-blue-700 ring-2"
+            className="min-w-full rounded-full border border-blue-900 text-base ring-1 ring-blue-900"
             type="text"
             name="Search"
             id=""
