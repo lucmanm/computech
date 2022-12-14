@@ -16,8 +16,6 @@ function App() {
           <Route index element={<Products />}></Route>
           <Route path="login" element={<Login />}>
           <Route index element={<CpLogin/>}/>
-            <Route path='login' element={<div>Login Here</div>}/>
-            
             <Route path='register' element={<CpRegister/>}/>
           </Route>
         </Routes>
