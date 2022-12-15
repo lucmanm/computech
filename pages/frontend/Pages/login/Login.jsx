@@ -14,7 +14,7 @@ export const Login = () => {
         <div>
           <div className="mx-auto mt-12 w-1/2">
             <span>
-              <NavLink
+              <NavLink 
                 className="block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md focus:font-bold focus:text-blue-900 focus:ring-2 focus:ring-blue-900"
                 to="/login">
                 <span>Login</span>
@@ -24,7 +24,7 @@ export const Login = () => {
               </NavLink>
             </span>
             <span>
-              <NavLink
+              <NavLink 
                 className="mt-2 block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md focus:font-bold focus:text-blue-900 focus:ring-2 focus:ring-blue-900"
                 to="register">
                 <span>Register</span>

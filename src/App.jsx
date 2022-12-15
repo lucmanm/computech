@@ -6,7 +6,7 @@ import { Login as CpLogin } from "../pages/frontend/Components/Login";
 import { Register as CpRegister } from "../pages/frontend/Components/Register";
 import { Login } from "../pages/frontend/Pages/login/Login";
 import "./App.css";
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Profile, Account, Address, Orders, WishList } from "../pages/frontend/Pages/account";
 
 function App() {

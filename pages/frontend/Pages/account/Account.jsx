@@ -12,13 +12,13 @@ const normalLink =
     <>
       <div className=" h-fit desktop:container grid grid-cols-9">
         <div className="col-span-2 my-5 border rounded-md bg-white shadow-md">
-        {feAccount.map((accountTittle) => (
-              <div key={accountTittle.title}>
+        {feAccount.map(({title, links}) => (
+              <div key={title}>
                 <p className="mx-3 my-5 uppercase font-semibold shadow-md">
-                  {accountTittle.title}
+                  {title}
                 </p>
                 {/* Sub Categories Loops here. */}
-                {accountTittle.links.map(({name, pathdir, icon}) => (
+                {links.map(({name, pathdir, icon}) => (
                   <NavLink
                     to={`${pathdir}`}
                     key={pathdir}
