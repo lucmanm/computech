@@ -7,7 +7,7 @@ export const Account = () => {
 const activeLink =
   "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2";
 const normalLink =
-  "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md text-gray-700  hover:bg-blue-900 hover:text-white m-2";
+  "flex items-center gap-5 pl-4 pt-4 pb-4 rounded-lg text-white text-md text-gray-700  hover:bg-blue-900 hover:text-white m-2";
 
   return (
     <>
