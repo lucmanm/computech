@@ -4,10 +4,13 @@ import {
   BsCart2,
   BsLaptop,
   BsPrinter,
+  BsCartCheck,
+  BsTruck
 } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { CiDesktop } from "react-icons/ci"
+import { CgProfile } from "react-icons/cg"
 
 export const icons = {
   personIcon: <BsPerson className="h-7 w-7" />,
@@ -38,6 +41,41 @@ export const categoryIcon = [
   },
 ];
 
+export const feAccount = [
+  {
+    title: "My Account Information",
+    links: [
+      {
+        name: "My Profile",
+        icon: <CgProfile />,
+      },
+      {
+        name: "My Address",
+        icon: <BsTruck />,
+      },
+    ],
+  },
+
+  {
+    title: "My Orders",
+    links: [
+      {
+        name: "Manage Orders",
+        icon: <BsCartCheck />,
+      },
+    ],
+  },
+
+  {
+    title: "Preference",
+    links: [
+      {
+        name: "WishList",
+        icon: <BsHeart />,
+      },
+    ],
+  },
+]
 // export const links = [
 //   {
 //     title: "Dashboard",
