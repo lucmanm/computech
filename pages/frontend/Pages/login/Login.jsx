@@ -2,6 +2,12 @@ import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
 export const Login = () => {
+
+  const activeLink =
+  "block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md";
+  const normalLink =
+    "mt-2  block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md focus:font-bold focus:text-blue-900 focus:ring-2 focus:ring-blue-900";
+  
   return (
     <>
       <div className="grid desktop:container desktop:grid-cols-2 ">

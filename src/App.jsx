@@ -4,9 +4,9 @@ import { Products, IconNavigation } from "../pages/frontend/";
 import { Footer } from "../pages/frontend/footer/Footer";
 import { Login as CpLogin } from "../pages/frontend/Components/Login";
 import { Register as CpRegister } from "../pages/frontend/Components/Register";
-import { Login } from "../pages/frontend/Pages/Login";
+import { Login } from "../pages/frontend/Pages/login/Login";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import { Profile, Account, Address, Orders, WishList } from "../pages/frontend/Pages/account";
 
 function App() {

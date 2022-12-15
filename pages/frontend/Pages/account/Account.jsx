@@ -2,11 +2,11 @@ import React from "react";
 import { feAccount } from "../../assets/data/data";
 import { NavLink, Outlet } from "react-router-dom";
 export const Account = () => {
-
+  
 const activeLink =
-  "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-lg text-white text-md m-2";
+  "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md m-2 bg-blue-900";
 const normalLink =
-  "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-lg text-white text-md text-gray-700  hover:bg-blue-900 hover:text-white m-2";
+  "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md text-gray-700  hover:bg-blue-900 hover:text-white m-2";
 
   return (
     <>
@@ -18,20 +18,16 @@ const normalLink =
                   {accountTittle.title}
                 </p>
                 {/* Sub Categories Loops here. */}
-                {accountTittle.links.map((link) => (
+                {accountTittle.links.map(({name, pathdir, icon}) => (
                   <NavLink
-                    to={`${link.linkdir}`}
-                    key={link.name}
-                    onClick={``}
-                    style={({ isActive }) => ({
-                      backgroundColor: isActive ? currentColor : "",
-                    })}
+                    to={`${pathdir}`}
+                    key={pathdir}
                     className={({ isActive }) =>
                       isActive ? activeLink : normalLink
                     }
                   >
-                    {link.icon}
-                    <span className="capatilize">{link.name}</span>
+                    {icon}
+                    <span className="capatilize">{name}</span>
                   </NavLink>
                 ))}
               </div>
