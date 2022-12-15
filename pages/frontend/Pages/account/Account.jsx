@@ -1,6 +1,6 @@
 import React from "react";
-import { feAccount } from "../assets/data/data";
-import { NavLink } from "react-router-dom";
+import { feAccount } from "../../assets/data/data";
+import { NavLink, Outlet } from "react-router-dom";
 export const Account = () => {
 
 const activeLink =
@@ -11,16 +11,16 @@ const normalLink =
   return (
     <>
       <div className=" h-fit desktop:container grid grid-cols-9">
-        <div className="col-span-2 my-5">
+        <div className="col-span-2 my-5 border rounded-md bg-white shadow-md">
         {feAccount.map((accountTittle) => (
               <div key={accountTittle.title}>
-                <p className="m-3 mt-2 uppercase font-semibold">
+                <p className="mx-3 my-5 uppercase font-semibold shadow-md">
                   {accountTittle.title}
                 </p>
                 {/* Sub Categories Loops here. */}
                 {accountTittle.links.map((link) => (
                   <NavLink
-                    to={`/${link.name}`}
+                    to={`${link.linkdir}`}
                     key={link.name}
                     onClick={``}
                     style={({ isActive }) => ({
@@ -37,7 +37,9 @@ const normalLink =
               </div>
             ))}
         </div>
-
+        <div className="col-span-7 my-5 border rounded-md ml-2 bg-white shadow-md">
+          <Outlet/>
+        </div>
       </div>
     </>
   );

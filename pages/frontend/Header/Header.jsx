@@ -4,6 +4,7 @@ import { FrontSideNav } from "./FrontSideNav";
 import { Link } from "react-router-dom";
 import { AccountLogin } from "./AccountLogin";
 import CompuTechLogo from "../assets/img/CompuTechLogo.png";
+
 export const Header = () => {
   return (
     <>
