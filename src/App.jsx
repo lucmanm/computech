@@ -21,7 +21,7 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Products />}></Route>
-        <Route path="login" element={<Login />}>
+        <Route path="/login" element={<Login />}>
           <Route index element={<CpLogin />} />
           <Route path="register" element={<CpRegister />} />
         </Route>
