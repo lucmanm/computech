@@ -7,7 +7,13 @@ import { Register as CpRegister } from "../pages/frontend/Components/Register";
 import { Login } from "../pages/frontend/Pages/Login";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { Profile, Account, Address, Orders, WishList } from "../pages/frontend/Pages/account";
+import {
+  Profile,
+  Account,
+  Address,
+  Orders,
+  WishList,
+} from "../pages/frontend/Pages/account";
 
 function App() {
   return (
