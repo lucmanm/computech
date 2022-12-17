@@ -20,7 +20,7 @@ export const Products = () => {
     <div className="relative m-10 grid  h-fit cursor-pointer grid-cols-2 justify-evenly gap-3 tablet:grid-cols-3 desktop:container desktop:grid-cols-5">
       {prod.slice(0, 5).map(({ id, description, price, images: [image1] }) => (
         <div key={id}>
-          <div className="hover:hadow-lg group prose relative flex flex-col gap-2 overflow-hidden  rounded-md border border-blue-900 bg-white p-4 text-sm hover:border-blue-700">
+          <div className="hover:hadow-lg group prose relative flex flex-col gap-2 overflow-hidden  rounded-md border border-blue-900 bg-white p-4 text-sm hover:border-blue-700 hover:shadow-lg">
             <div className="absolute z-10 rounded-md border border-blue-800  bg-white px-1 font-semibold">
               New
             </div>
