@@ -1,5 +1,5 @@
 import React from "react";
-import CompuTechLogoTrans from "../assets/img/CompuTechLogoTrans.png"
+import CompuTechLogoTrans from "../assets/img/CompuTechLogoTrans.png";
 export const FooterInfo = () => {
   return (
     <div className="bg-gray-100">

@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 
 export const Account = () => {
   const activeLink =
-    "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md m-2 bg-blue-900";
+    "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md m-2 bg-blue-900 font-semibold";
   const normalLink =
     "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md text-gray-700  hover:bg-blue-900 hover:text-white m-2";
 

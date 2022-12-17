@@ -8,17 +8,20 @@ import {
   BsTruck,
 } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
-import { HiOutlineMailOpen } from "react-icons/hi";
+import { HiOutlineMailOpen, HiAcademicCap } from "react-icons/hi";
 import { CiDesktop } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
+import { MdCompare } from "react-icons/md";
 
 export const icons = {
-  personIcon: <BsPerson className="h-7 w-7" />,
-  heartIcon: <BsHeart className="h-7 w-7" />,
-  cartIcon: <BsCart2 className="h-6 w-6" />,
-  languageIcon: <IoLanguage className="h-7 w-7" />,
-  emailIcon: <HiOutlineMailOpen className="h-12 w-12" />,
+  personIcon: <BsPerson size={24} />,
+  heartIcon: <BsHeart size={24} />,
+  cartIcon: <BsCart2 size={24} />,
+  languageIcon: <IoLanguage size={24} />,
+  emailIcon: <HiOutlineMailOpen size={24} />,
+  compare: <MdCompare size={24} />,
 };
+
 export const langauge = {
   english: "English",
   arabic: "عربى",

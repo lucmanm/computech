@@ -5,12 +5,14 @@ export const Orders = () => {
     <>
       <orders>
         <div className="flex flex-col justify-center p-4">
-          <div className="pb-2 font-bold">All Orders</div>
+          <div className="mb-2 rounded-sm bg-blue-900 p-1 font-bold text-white">
+            Orders
+          </div>
           {/* Orders Listing */}
           <div className="border-y-2 py-1">
             <span>Order #: 1265456465</span>
           </div>
-          <div className=" flex items-center text-sm text-gray-500">
+          <div className=" flex items-center text-sm ">
             <div>
               <img src={aioimg} alt="All  in one Image" className="h-24 w-24" />
             </div>

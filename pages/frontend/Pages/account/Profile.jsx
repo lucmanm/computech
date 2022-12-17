@@ -5,7 +5,9 @@ export const Profile = () => {
     <>
       <profile>
         <div className="flex  flex-col justify-center p-4">
-          <p className="pb-2 font-bold">My Profile</p>
+          <div className="mb-2 rounded-sm bg-blue-900 p-1 font-bold text-white">
+            Profile
+          </div>
           <hr className="my-2" />
           <span>Personal Details</span>
           <hr className="my-2" />

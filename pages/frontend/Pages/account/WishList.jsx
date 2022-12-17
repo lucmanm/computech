@@ -5,7 +5,7 @@ export const WishList = () => {
     <>
       <wishlist>
         <div className="flex flex-col justify-center p-4">
-          <div className="mb-2 rounded-md bg-blue-900 p-1 font-bold text-white">
+          <div className="mb-2 rounded-sm bg-blue-900 p-1 font-bold text-white">
             Wishlist
           </div>
           {/* Orders Listing */}
