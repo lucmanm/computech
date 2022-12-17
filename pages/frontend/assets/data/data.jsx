@@ -5,12 +5,12 @@ import {
   BsLaptop,
   BsPrinter,
   BsCartCheck,
-  BsTruck
+  BsTruck,
 } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { CiDesktop } from "react-icons/ci"
-import { CgProfile } from "react-icons/cg"
+import { CiDesktop } from "react-icons/ci";
+import { CgProfile } from "react-icons/cg";
 
 export const icons = {
   personIcon: <BsPerson className="h-7 w-7" />,
@@ -79,7 +79,7 @@ export const feAccount = [
       },
     ],
   },
-]
+];
 
 // export const links = [
 //   {
