@@ -1,6 +1,8 @@
 import React from "react";
 import { feAccount } from "../../assets/data/data";
 import { NavLink, Outlet } from "react-router-dom";
+import { CgProfile } from "react-icons/cg"
+
 export const Account = () => {
   
 const activeLink =
@@ -11,7 +13,14 @@ const normalLink =
   return (
     <>
       <div className=" h-fit desktop:container grid grid-cols-9">
+        {/*SideBar menus for account information */}
         <div className="col-span-2 my-5 border rounded-md bg-white shadow-md">
+          <div className="text-center content-center flex flex-col items-center  justify-center p-2">
+              <span className="text-blue-900"><CgProfile className="h-24 w-24"/></span>
+              <p className="font-bold text-lg">Your Name</p>
+              <p className="text-sm">Your Email</p>
+              <p className="text-sm">+966 56 261 7544</p>
+          </div>
         {feAccount.map(({title, links}) => (
               <div key={title}>
                 <p className="mx-3 my-5 uppercase font-semibold shadow-md">
