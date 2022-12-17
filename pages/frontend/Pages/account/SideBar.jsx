@@ -18,7 +18,7 @@ const normalLink =
           <div className="text-center content-center flex flex-col items-center  justify-center p-2">
               <span className="text-blue-900"><CgProfile className="h-24 w-24"/></span>
               <p className="font-bold text-lg">Your Name</p>
-              <p className="text-sm">Your Email</p>
+              <p className="text-sm"><a href="mailto:youremail@domain.com">youremail@domain.com</a></p>
               <p className="text-sm">+966 56 261 7544</p>
           </div>
         {feAccount.map(({title, links}) => (
