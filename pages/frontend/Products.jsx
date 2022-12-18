@@ -33,7 +33,7 @@ export const Products = () => {
               />
             </div>
             {/* Wishlist, Compare, QuickView */}
-            <span className="relative w-fit rounded-md bg-blue-900 px-2 py-1 text-white">
+            <span className="relative w-fit rounded-md bg-primary-dark px-2 py-1 text-white">
               Category
             </span>
 

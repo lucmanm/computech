@@ -30,12 +30,8 @@ export const WishList = () => {
               </div>
             </div>
             <div className="flex flex-row justify-between">
-              <button className=" w-fit flex-initial rounded-md border border-transparent bg-blue-900 py-1 px-4 text-sm font-medium text-white hover:bg-blue-700">
-                Add to Cart
-              </button>
-              <button className="w-fit flex-initial rounded-md border border-transparent bg-red-700 py-1 px-4 text-sm font-medium text-white hover:bg-red-900">
-                Remove
-              </button>
+              <button className="btn btn-primary">Add to Cart</button>
+              <button className="btn btn-danger">Remove</button>
             </div>
           </div>
         </div>

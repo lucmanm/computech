@@ -1,7 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-body {
-  font-family: "Montserrat", sans-serif;
-}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply w-fit flex-initial rounded-md border border-transparent py-1 px-4 text-sm font-medium;
+  }
+  .btn-primary {
+    @apply bg-blue-900  text-white hover:bg-blue-700;
+  }
+  .btn-danger {
+    @apply bg-red-700 text-white hover:bg-red-900;
+  }
+}
