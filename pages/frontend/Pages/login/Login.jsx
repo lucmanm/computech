@@ -3,15 +3,9 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export const Login = () => {
   const activeLink =
-    "block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md";
-  const normalLink =
-    "mt-2  block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md focus:font-bold focus:text-blue-900 focus:ring-2 focus:ring-blue-900";
-
-
     "mt-2 block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md font-bold text-blue-900 ring-2 ring-blue-900";
   const normalLink =
     "mt-2 block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md ";
-
   return (
     <>
       <div className="grid desktop:container desktop:grid-cols-2 ">
@@ -19,14 +13,12 @@ export const Login = () => {
           <div className="mx-auto mt-12 w-1/2">
             <span>
               <NavLink
-                className="block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md focus:font-bold focus:text-blue-900 focus:ring-2 focus:ring-blue-900"
-                to="/login"
-              >
                 end
                 className={({ isActive }) =>
                   isActive ? activeLink : normalLink
                 }
-                to="/login">
+                to="/login"
+              >
                 <span>Login</span>
                 <p className="mt-1 text-sm text-gray-600">
                   Use a permanent address where you can receive mail.
@@ -35,13 +27,11 @@ export const Login = () => {
             </span>
             <span>
               <NavLink
-                className="mt-2 block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md focus:font-bold focus:text-blue-900 focus:ring-2 focus:ring-blue-900"
-                to="register"
-              >
                 className={({ isActive }) =>
                   isActive ? activeLink : normalLink
                 }
-                to="register">
+                to="register"
+              >
                 <span>Register</span>
                 <p className="mt-1 text-sm text-gray-600">
                   if you don't have an account. Create your account now!
