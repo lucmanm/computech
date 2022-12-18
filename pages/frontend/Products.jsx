@@ -43,7 +43,7 @@ export const Products = () => {
             </div>
 
             <div className="flex flex-grow flex-wrap items-center justify-between">
-              <button className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-900 text-white hover:bg-blue-700 hover:shadow-md hover:shadow-blue-900/50 focus:shadow-none">
+              <button className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-900 text-white hover:bg-blue-700 hover:shadow-md hover:shadow-blue-900/50 focus:shadow-inner">
                 {compare}
               </button>
               <button className="flex h-9 w-9 items-center justify-center  rounded-full bg-blue-900 text-white hover:bg-blue-700 hover:shadow-md hover:shadow-blue-900/50 focus:shadow-none">
