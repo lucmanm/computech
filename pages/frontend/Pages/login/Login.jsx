@@ -17,7 +17,8 @@ export const Login = () => {
                 className={({ isActive }) =>
                   isActive ? activeLink : normalLink
                 }
-                to="/login">
+                to="/login"
+              >
                 <span>Login</span>
                 <p className="mt-1 text-sm text-gray-600">
                   Use a permanent address where you can receive mail.
@@ -29,7 +30,8 @@ export const Login = () => {
                 className={({ isActive }) =>
                   isActive ? activeLink : normalLink
                 }
-                to="register">
+                to="register"
+              >
                 <span>Register</span>
                 <p className="mt-1 text-sm text-gray-600">
                   if you don't have an account. Create your account now!
