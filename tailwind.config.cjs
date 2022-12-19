@@ -38,20 +38,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        Mont: ["Montserrat", "sans-serif"],
+        monts: ["Montserrat", "sans-serif"],
+        cairo: ["Cairo", "sans-serif"],
       },
-      // backgroundColor: {
-      //   primary: "#1E3A8A",
-      //   secondary: "#1D4ED8",
-      //   success: "198754",
-      //   danger: "D73444",
-      //   warning: "FFC107",
-      //   info: "#0DCAF0",
-      //   light: "#F8F9FA",
-      //   dark: "#212529",
-      //   "light-gray": "#F7F7F7",
-      //   "half-transparent": "rgba(0, 0, 0, 0.5)",
-      // },
       colors: {
         primary: {
           light: "#1D4ED8",
