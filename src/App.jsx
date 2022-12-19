@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "../pages/frontend/Header/";
-import { Products, IconNavigation } from "../pages/frontend/";
+import { Products } from "../pages/frontend/";
 import { Footer } from "../pages/frontend/footer/Footer";
 import { Login as CpLogin } from "../pages/frontend/Components/Login";
 import { Register as CpRegister } from "../pages/frontend/Components/Register";
