@@ -32,7 +32,7 @@ export const Header = () => {
               id=""
             />
           </div>
-          <div className="flex hidden flex-col px-2 text-base font-medium ">
+          <div className="flex flex-col px-2 text-base font-medium ">
             <span className="text-blue-900">Need help? Call Us</span>
             <span>+966 56 261 7554</span>
           </div>
