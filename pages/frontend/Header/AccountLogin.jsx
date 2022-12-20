@@ -6,12 +6,11 @@ export const AccountLogin = () => {
   return (
     <div className="grow">
       <div className="relative flex flex-row place-content-end items-center space-x-4 px-2 text-blue-900">
-        <div className="flex flex-row ">
+        <button className="flex px-1 font-cairo text-sm font-bold">
           {languageIcon}
-          <button className=" px-1 font-cairo text-sm font-bold">
-            {langauge.arabic}
-          </button>
-        </div>
+          {langauge.arabic}
+        </button>
+
         <div>
           <Link to="/login">{personIcon}</Link>
         </div>

@@ -4,33 +4,42 @@ export const Cart = () => {
   return (
     <>
       <div className="my-5 mx-2 flex flex-col flex-wrap gap-2 text-sm tablet:mx-2 tablet:flex-row desktop:container">
-        <div className="card basis-full tablet:basis-2/3">
+        <div className="card basis-full shadow-none tablet:basis-2/3">
           <div className="card-title">Cart</div>
-          <div className="flex items-center text-sm">
-            <div>
-              <img src={aioimg} alt="All  in one Image" className="h-24 w-24" />
+          {/* Cart Products */}
+          <div className=" border-b border-blue-900 pb-1">
+            <div className="flex items-center text-sm">
+              <div className="aspect-h-square">
+                <img
+                  src={aioimg}
+                  alt="All  in one Image"
+                  className="object-cover"
+                />
+              </div>
+              <div className="py-1 px-4">
+                <p>Model: Model Name</p>
+                <p className=" line-clamp-3">
+                  Description: Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Nihil quo doloribus ipsam natus voluptate
+                  nemo eos quibusdam recusandae?
+                </p>
+                <p>Brand: Brand Name</p>
+              </div>
             </div>
-            <div className="py-1 px-4">
-              <p>Model: Model Name</p>
-              <p>
-                Description: Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Nihil quo doloribus ipsam natus voluptate nemo eos
-                quibusdam recusandae?
-              </p>
-              <p>Brand: Brand Name</p>
-              <p className="text-lg font-bold text-blue-900">Sr 100.00</p>
+            <div className="flex flex-row justify-between">
+              <button className="btn btn-danger">Remove</button>
+              <div className="flex flex-wrap items-center justify-center gap-x-1">
+                <p className="text-2xl font-bold text-blue-900">Sr 100.00</p>
+                <button className="btn btn-primary font-bold">-</button>
+                <input
+                  type="text"
+                  className="h-fit w-11 flex-initial justify-center rounded-md  py-2 px-3 text-center text-sm font-medium"
+                  value="1"
+                  onChange={() => {}}
+                />
+                <button className="btn btn-primary">+</button>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-row justify-between">
-            <button className="btn btn-primary font-bold">-</button>
-            <input
-              type="text"
-              className="h-fit w-11 flex-initial justify-center rounded-md  py-2 px-3 text-sm font-medium"
-              max={1}
-              min={0}
-            />
-            <button className="btn btn-primary">+</button>
-            <button className="btn btn-danger">Remove</button>
           </div>
         </div>
         {/* Summary Order */}

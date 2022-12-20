@@ -10,7 +10,7 @@ export const Login = () => {
     <>
       <div className="grid desktop:container desktop:grid-cols-2 ">
         <div>
-          <div className="mx-auto mt-12 w-1/2">
+          <div className="mx-auto mt-12 w-full px-4">
             <span>
               <NavLink
                 end

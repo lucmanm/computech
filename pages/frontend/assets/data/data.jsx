@@ -12,6 +12,7 @@ import { HiOutlineMailOpen, HiAcademicCap } from "react-icons/hi";
 import { CiDesktop } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { MdCompare } from "react-icons/md";
+import { AiOutlineDelete } from "react-icons/ai";
 
 export const icons = {
   personIcon: <BsPerson size={24} />,
@@ -20,6 +21,7 @@ export const icons = {
   languageIcon: <IoLanguage size={24} />,
   emailIcon: <HiOutlineMailOpen size={24} />,
   compare: <MdCompare size={24} />,
+  delete: <AiOutlineDelete size={24} />,
 };
 
 export const langauge = {
