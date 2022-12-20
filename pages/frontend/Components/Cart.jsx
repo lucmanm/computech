@@ -3,8 +3,9 @@ import aioimg from "../assets/img/aioimg.jpg";
 export const Cart = () => {
   return (
     <>
-      <div className="my-5 flex flex-row  flex-wrap gap-2 text-sm desktop:container">
-        <div className="flex w-full grow basis-1/2 flex-col rounded-md border border-blue-900 bg-white p-1 shadow-md">
+      <div className="my-5 mx-2 flex flex-col flex-wrap gap-2 text-sm tablet:mx-2 tablet:flex-row desktop:container">
+        <div className="card basis-full tablet:basis-2/3">
+          <div className="card-title">Cart</div>
           <div className="flex items-center text-sm">
             <div>
               <img src={aioimg} alt="All  in one Image" className="h-24 w-24" />
@@ -21,31 +22,39 @@ export const Cart = () => {
             </div>
           </div>
           <div className="flex flex-row justify-between">
-            <button className="btn btn-primary">Add to Cart</button>
+            <button className="btn btn-primary font-bold">-</button>
+            <input
+              type="text"
+              className="h-fit w-11 flex-initial justify-center rounded-md  py-2 px-3 text-sm font-medium"
+              max={1}
+              min={0}
+            />
+            <button className="btn btn-primary">+</button>
             <button className="btn btn-danger">Remove</button>
           </div>
         </div>
         {/* Summary Order */}
-        <div className=" flex w-full  basis-1/4 flex-col rounded-md border border-blue-900 bg-white p-1 shadow-md">
-          <div className="mb-2 rounded-md bg-blue-900 p-1 font-bold text-white">
-            Summary Order
-          </div>
+        <div className="card basis-full tablet:basis-1/4">
+          <div className="card-title">Order Summary</div>
           <div>
-            <section>
-              <div>
-                <div>Saved Ammountbr (Discounted/Cashback)</div>
-                <div>00,000.00</div>
+            <section className="flex flex-col flex-wrap">
+              <div className="flex flex-row flex-wrap">
+                <div className="grow py-1">Sub Total</div>
+                <div className="p-1 text-right">00,000.00</div>
               </div>
-              <div>
-                <div>Total Ammount (Items)</div>
-                <div>00,000.00</div>
+              <div className="flex flex-row flex-wrap">
+                <div className="grow py-1">Shipping Fee</div>
+                <div className="p-1">00,000.00</div>
+              </div>
+
+              <div className="flex flex-row flex-wrap">
+                <div className="grow py-1">Total</div>
+                <div className="p-1">00,000.00</div>
               </div>
             </section>
-          </div>
-          <div></div>
-          <div></div>
-          <div>
-            <button className="btn btn-primary">Checkout</button>
+            <div>
+              <button className="btn btn-primary w-full">Checkout</button>
+            </div>
           </div>
         </div>
       </div>
