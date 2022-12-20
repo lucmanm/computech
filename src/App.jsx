@@ -4,8 +4,8 @@ import { Products } from "../pages/frontend/";
 import { Footer } from "../pages/frontend/footer/Footer";
 import { Login as CpLogin } from "../pages/frontend/Components/Login";
 import { Register as CpRegister } from "../pages/frontend/Components/Register";
-import { Login } from "../pages/frontend/Pages/login/Login";
-import { Cart } from "../pages/frontend/Components/Cart";
+import { Login } from "../pages/frontend/Pages/Login";
+import { Cart } from "../pages/frontend/Pages/Cart";
 
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
