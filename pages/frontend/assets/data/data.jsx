@@ -8,7 +8,7 @@ import {
   BsTruck,
 } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
-import { HiOutlineMailOpen } from "react-icons/hi";
+import { HiOutlineMailOpen, HiOutlineHome } from "react-icons/hi";
 import { CiDesktop } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { MdCompare } from "react-icons/md";
@@ -22,6 +22,7 @@ export const icons = {
   emailIcon: <HiOutlineMailOpen size={24} />,
   compare: <MdCompare size={24} />,
   deleteIcon: <AiOutlineDelete size={24} />,
+  homeIcon: <HiOutlineHome size={24} />,
 };
 
 export const langauge = {

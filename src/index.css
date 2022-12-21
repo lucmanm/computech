@@ -15,7 +15,7 @@
   }
 
   .btn-icon{
-    @apply h-fit justify-center border border-transparent py-1 px-1 text-sm font-medium cursor-pointer rounded-full;
+    @apply h-fit justify-center border border-transparent py-1 px-1 text-sm font-medium cursor-pointer;
   }
 
   .btn-primary {

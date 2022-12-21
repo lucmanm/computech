@@ -43,13 +43,13 @@ export const Products = () => {
             </div>
 
             <div className="flex flex-wrap items-center justify-between">
-              <button className="btn-icon btn-primary desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
+              <button className="btn-icon btn-primary rounded-full desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
                 {compare}
               </button>
-              <button className="btn-icon btn-primary desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
+              <button className="btn-icon btn-primary rounded-full desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
                 {heartIcon}
               </button>
-              <button className="btn-icon btn-primary desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
+              <button className="btn-icon btn-primary rounded-full desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
                 {cartIcon}
               </button>
             </div>

@@ -16,6 +16,7 @@ import {
   Orders,
   WishList,
 } from "../pages/frontend/Pages/account";
+import { IconHzBar } from "../pages/frontend/Components/IconHzBar";
 
 function App() {
   return (
@@ -35,7 +36,9 @@ function App() {
         </Route>
         <Route path="cart" element={<Cart />} />
       </Routes>
+
       <Footer />
+      <IconHzBar />
     </div>
   );
 }
