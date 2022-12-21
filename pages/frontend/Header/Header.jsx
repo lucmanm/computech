@@ -10,7 +10,7 @@ import { BiDesktop, BiLaptop, BiPrinter } from "react-icons/bi";
 import { MdOutlineScanner } from "react-icons/md";
 import { GiServerRack } from "react-icons/gi";
 
-import { icons } from "../assets/data/data";
+import { icons, mobIcons } from "../assets/data/data";
 export const Header = () => {
   const { languageIcon, personIcon, heartIcon, cartIcon } = icons;
   return (
@@ -93,7 +93,7 @@ export const Header = () => {
             <div className="order-last basis-2/12 p-1 desktop:order-6">
               <div className="flex h-full items-center justify-center">
                 <Link to="/cart">
-                  <button className="btn-icon btn-primary desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
+                  <button className="btn-icon btn-primary rounded-full desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
                     {cartIcon}
                   </button>
                 </Link>

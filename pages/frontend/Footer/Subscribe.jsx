@@ -21,7 +21,7 @@ const Subscribe = () => {
             </span>
             <span>
               <input
-                className="btn btn-primary rounded-full"
+                className="btn btn-primary btn-sm rounded-full"
                 type="button"
                 value="Subscribe"
               />

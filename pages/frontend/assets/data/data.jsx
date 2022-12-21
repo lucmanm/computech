@@ -8,7 +8,13 @@ import {
   BsTruck,
 } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
-import { HiOutlineMailOpen, HiOutlineHome } from "react-icons/hi";
+import {
+  HiOutlineMailOpen,
+  HiOutlineHome,
+  HiOutlineShoppingCart,
+  HiOutlineSearch,
+  HiMenu,
+} from "react-icons/hi";
 import { CiDesktop } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { MdCompare } from "react-icons/md";
@@ -22,9 +28,16 @@ export const icons = {
   emailIcon: <HiOutlineMailOpen size={24} />,
   compare: <MdCompare size={24} />,
   deleteIcon: <AiOutlineDelete size={24} />,
-  homeIcon: <HiOutlineHome size={24} />,
 };
 
+export const mobIcons = {
+  personIc: <BsPerson size={24} />,
+  heartIc: <BsHeart size={24} />,
+  homeIc: <HiOutlineHome size={24} />,
+  shopIc: <HiOutlineShoppingCart size={24} />,
+  searchIc: <HiOutlineSearch size={24} />,
+  menuIc: <HiMenu size={24} />,
+};
 export const langauge = {
   english: "English",
   arabic: "عربى",

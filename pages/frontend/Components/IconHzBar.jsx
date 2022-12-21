@@ -1,28 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { icons } from "../assets/data/data";
+import { mobIcons } from "../assets/data/data";
 export const IconHzBar = () => {
-  const { heartIcon, homeIcon } = icons;
+  const { homeIc, personIc, shopIc, searchIc, menuIc } = mobIcons;
   return (
     <>
-      <div className="fixed bottom-0 flex w-full flex-row items-center justify-evenly border-t-2 bg-blue-900 text-white shadow-md shadow-gray-700 desktop:hidden">
-        <NavLink className="btn-icon btn-primary grow" to="#">
-          {homeIcon}
+      <div className="fixed bottom-0 flex w-full flex-row items-center justify-evenly bg-blue-900 text-white shadow-xl shadow-gray-700 desktop:hidden">
+        <NavLink className="btn-icon btn-primary grow py-3" to="#">
+          <div className="mx-auto w-fit">{homeIc}</div>
         </NavLink>
-        <NavLink
-          className="btn-icon btn-primary grow grow border-2 border-white"
-          to="#"
-        >
-          {heartIcon}
+        <NavLink className="btn-icon btn-primary grow py-3" to="#">
+          <div className="mx-auto w-fit">{searchIc}</div>
         </NavLink>
-        <NavLink className="btn-icon btn-primary grow" to="#">
-          {heartIcon}
+        <NavLink className="btn-icon btn-primary grow py-3" to="#">
+          <div className="mx-auto w-fit">{shopIc}</div>
         </NavLink>
-        <NavLink className="btn-icon btn-primary grow" to="#">
-          {heartIcon}
+        <NavLink className="btn-icon btn-primary grow py-3" to="#">
+          <div className="mx-auto w-fit">{personIc}</div>
         </NavLink>
-        <NavLink className="btn-icon btn-primary grow" to="#">
-          {heartIcon}
+        <NavLink className="btn-icon btn-primary grow py-3" to="#">
+          <div className="mx-auto w-fit">{menuIc}</div>
         </NavLink>
       </div>
     </>

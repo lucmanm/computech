@@ -17,6 +17,7 @@ import {
   WishList,
 } from "../pages/frontend/Pages/account";
 import { IconHzBar } from "../pages/frontend/Components/IconHzBar";
+import { Banners } from "../pages/frontend/Components/Banners";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
         </Route>
         <Route path="cart" element={<Cart />} />
       </Routes>
-
+      <Banners />
       <Footer />
       <IconHzBar />
     </div>

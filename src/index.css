@@ -8,14 +8,14 @@
 
 @layer components {
   .btn {
-    @apply h-fit justify-center rounded-md border border-transparent py-2 px-3 text-sm font-medium cursor-pointer;
+    @apply h-fit cursor-pointer justify-center rounded-md border border-transparent py-2 px-3 text-sm font-medium;
   }
   .btn-sm {
     @apply py-1 px-1 text-sm font-medium;
   }
 
-  .btn-icon{
-    @apply h-fit justify-center border border-transparent py-1 px-1 text-sm font-medium cursor-pointer;
+  .btn-icon {
+    @apply h-fit cursor-pointer justify-center border border-transparent py-1 px-1 text-sm font-medium;
   }
 
   .btn-primary {
@@ -24,9 +24,9 @@
   .btn-danger {
     @apply bg-red-700 text-white hover:bg-red-900;
   }
-  
-  .input{
-    @apply text-sm p-1 desktop:p-2 rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900;
+
+  .input {
+    @apply rounded-md border-gray-300 p-1 text-sm shadow-sm focus:border-blue-900 focus:ring-blue-900 desktop:p-2;
   }
   .card {
     @apply flex grow flex-col rounded-md border border-blue-900 bg-white p-2 tablet:shadow tablet:shadow-slate-400;
