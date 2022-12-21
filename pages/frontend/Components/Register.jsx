@@ -29,7 +29,8 @@ export const Register = () => {
                     <div className="sm:col-span-3 col-span-6">
                       <label
                         htmlFor="first-name"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         First name
                       </label>
                       <input
@@ -44,7 +45,8 @@ export const Register = () => {
                     <div className="sm:col-span-3 col-span-6">
                       <label
                         htmlFor="last-name"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Last name
                       </label>
                       <input
@@ -59,7 +61,8 @@ export const Register = () => {
                     <div className="sm:col-span-4 col-span-6">
                       <label
                         htmlFor="email-address"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Email address
                       </label>
                       <input
@@ -74,7 +77,8 @@ export const Register = () => {
                     <div className="sm:col-span-4 col-span-6">
                       <label
                         htmlFor="email-address"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Confirm Email address
                       </label>
                       <input
@@ -89,7 +93,8 @@ export const Register = () => {
                     <div className="sm:col-span-4 col-span-6">
                       <label
                         htmlFor="email-address"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Password
                       </label>
                       <input
@@ -104,7 +109,8 @@ export const Register = () => {
                     <div className="sm:col-span-4 col-span-6">
                       <label
                         htmlFor="email-address"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Confirm Password
                       </label>
                       <input
@@ -158,7 +164,8 @@ export const Register = () => {
                     <legend className="sr-only">By Email</legend>
                     <div
                       className="text-base font-medium text-gray-900"
-                      aria-hidden="true">
+                      aria-hidden="true"
+                    >
                       By Email
                     </div>
                     <div className="mt-4 space-y-4">
@@ -174,7 +181,8 @@ export const Register = () => {
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="newsletter"
-                            className="font-medium text-gray-700">
+                            className="font-medium text-gray-700"
+                          >
                             Newsletter
                           </label>
                           <p className="text-gray-500">
@@ -194,7 +202,8 @@ export const Register = () => {
                         <div className="ml-3 text-sm">
                           <label
                             htmlFor="agreement"
-                            className="font-medium text-gray-700">
+                            className="font-medium text-gray-700"
+                          >
                             Agreement
                           </label>
                           <p className="text-gray-500">
@@ -209,7 +218,8 @@ export const Register = () => {
                 <div className="sm:px-6 bg-gray-50 px-4 py-3 text-right">
                   <button
                     type="submit"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-blue-900 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    className="inline-flex justify-center rounded-md border border-transparent bg-blue-900 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  >
                     Register
                   </button>
                 </div>

@@ -3,7 +3,7 @@ import React from "react";
 export const Navigationbar = () => {
   return (
     <>
-      <div className="hidden grow tablet:block">
+      <div className="grow">
         <ul className="text-md text-blac flex cursor-pointer flex-row flex-wrap text-center font-medium">
           <li className="group py-2 px-2">
             <div className="group-hover:rounded-t group-hover:bg-blue-900">

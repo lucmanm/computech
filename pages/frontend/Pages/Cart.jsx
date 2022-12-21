@@ -32,6 +32,7 @@ export const Cart = () => {
               </div>
             </div>
             <div className="flex flex-row justify-between">
+              {/* Delete Item Icon */}
               <button className="btn btn-danger btn-sm rounded-full">
                 {deleteIcon}
               </button>

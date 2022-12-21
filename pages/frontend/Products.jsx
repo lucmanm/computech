@@ -17,10 +17,10 @@ export const Products = () => {
   const { heartIcon, cartIcon, compare } = icons;
 
   return (
-    <div className="relative my-5 mx-2 grid  h-fit cursor-pointer grid-cols-2 justify-evenly gap-3 tablet:grid-cols-3 desktop:container desktop:grid-cols-5">
+    <div className="relative my-5 mx-2 grid  h-fit cursor-pointer grid-cols-2 justify-evenly gap-2 tablet:grid-cols-3 desktop:container desktop:grid-cols-5">
       {prod.slice(0, 5).map(({ id, description, price, images: [image1] }) => (
         <div key={id}>
-          <div className="group prose relative flex flex-col gap-2 overflow-hidden rounded-md border border-blue-900 bg-white p-4 text-sm hover:border-blue-700 hover:shadow hover:shadow-gray-400">
+          <div className="group prose relative flex flex-col gap-2 overflow-hidden rounded-md border border-blue-900 bg-white p-3 text-sm hover:border-blue-700 hover:shadow hover:shadow-gray-400">
             <div className="absolute z-10 rounded-md border border-blue-800  bg-white px-1 font-semibold">
               New
             </div>
@@ -43,13 +43,13 @@ export const Products = () => {
             </div>
 
             <div className="flex flex-wrap items-center justify-between">
-              <button className="btn-sm rounded-full bg-blue-900 text-white shadow-sm shadow-blue-900 hover:bg-blue-700 active:shadow-none">
+              <button className="btn-icon btn-primary desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
                 {compare}
               </button>
-              <button className="btn-sm rounded-full bg-blue-900 text-white shadow-sm shadow-blue-900 hover:bg-blue-700 active:shadow-none">
+              <button className="btn-icon btn-primary desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
                 {heartIcon}
               </button>
-              <button className="btn-sm rounded-full bg-blue-900 text-white shadow-sm shadow-blue-900 hover:bg-blue-700 active:shadow-none">
+              <button className="btn-icon btn-primary desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
                 {cartIcon}
               </button>
             </div>

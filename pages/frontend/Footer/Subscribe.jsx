@@ -16,12 +16,12 @@ const Subscribe = () => {
                 type="text"
                 name="Subscribe"
                 id=""
-                className="w-full rounded-full text-black"
+                className="input w-full rounded-full"
               />
             </span>
             <span>
               <input
-                className="btn btn-primary"
+                className="btn btn-primary rounded-full"
                 type="button"
                 value="Subscribe"
               />

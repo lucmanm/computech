@@ -9,64 +9,97 @@ import { HiMenu } from "react-icons/hi";
 import { BiDesktop, BiLaptop, BiPrinter } from "react-icons/bi";
 import { MdOutlineScanner } from "react-icons/md";
 import { GiServerRack } from "react-icons/gi";
+
+import { icons } from "../assets/data/data";
 export const Header = () => {
+  const { languageIcon, personIcon, heartIcon, cartIcon } = icons;
   return (
     <>
-      <div className="flex flex-col flex-wrap bg-white shadow-md">
-        <div className="bg-gray-800 py-2 text-center text-slate-50">
-          Free Shipping all Over Saudi Arabia
-        </div>
-
-        {/* Computech Logo and Search fitler */}
-        <div className="relative flex items-center justify-evenly py-5 desktop:container">
-          <div className="shrink">
-            <Link to="/">
-              <img src={CompuTechLogo} alt="" width={200} />
-            </Link>
-          </div>
-          <div className="grow px-8">
-            <input
-              className="min-w-full rounded-full border border-blue-900 text-base ring-1 ring-blue-900"
-              type="text"
-              name="Search"
-              id=""
-            />
-          </div>
-          <div className="flex flex-col px-2 text-base font-medium ">
-            <span className="text-blue-900">Need help? Call Us</span>
-            <span>+966 56 261 7554</span>
-          </div>
-        </div>
-        <div className="border border-b text-black shadow"></div>
-        {/* Navigation Menus for Desktop & Tablet */}
-        <div className="z-50 flex items-center py-1 desktop:container">
-          <div className="hidden tablet:block">
-            <button className="group relative my-2 flex shrink-0 cursor-pointer items-center justify-center rounded bg-blue-900 py-3 px-4 text-sm font-semibold uppercase">
-              <p className="text-white">Shop By Categories</p>
-              <HiMenu className="w-12" />
-              <div className="shadow-dm invisible absolute top-full mt-2 w-max min-w-full rounded bg-gray-100 text-black group-hover:block group-focus:visible">
-                <ul className="flex flex-col rounded border border-blue-100 text-left">
-                  <li className="flex flex-row items-center border-b border-gray-200 p-3 hover:rounded-t hover:bg-gray-200">
-                    <BiDesktop className="w-12" /> <p>Desktop</p>
+      <div className="bg-white shadow-md">
+        <div className=" desktop:container">
+          <div className="flex flex-row flex-wrap py-2">
+            <div className="order-2 basis-2/12 items-center p-1 desktop:order-1">
+              <div className="flex h-full items-center justify-center">
+                <Link to="/">
+                  <img src={CompuTechLogo} alt="" width={200} />
+                </Link>
+              </div>
+            </div>
+            <div className="order-3 basis-6/12 p-1 desktop:order-2 desktop:basis-8/12">
+              <div className="flex h-full items-center justify-center">
+                <input
+                  className="input w-full rounded-full"
+                  type="text"
+                  name="Search"
+                  id=""
+                />
+              </div>
+            </div>
+            <div className="hidden basis-2/12 p-1 desktop:order-3 desktop:block">
+              <div className="flex h-full flex-col items-center justify-center">
+                <span className="font-semibold text-blue-900">
+                  Need help? Call Us
+                </span>
+                <span>+966 56 261 7554</span>
+              </div>
+            </div>
+            {/* Dropdown Navigation & Sidebar */}
+            <div className="order-first basis-2/12 p-1 desktop:order-4">
+              <div className="flex h-full items-center justify-center">
+                Menu
+              </div>
+            </div>
+            {/* Navigation Menus */}
+            <div className="center z-50 hidden basis-8/12 p-1 desktop:order-5 desktop:block">
+              <div className="grow">
+                <ul className="text-md text-blac flex cursor-pointer flex-row flex-wrap text-center font-medium">
+                  <li className="group py-2 px-2">
+                    <div className="group-hover:rounded-t group-hover:bg-blue-900">
+                      <span className="border-b-4 border-gray-400 group-hover:border-blue-900 group-hover:text-white">
+                        Brands
+                      </span>
+                      <ul className="absolute hidden rounded border border-gray-200 bg-gray-100 text-left group-hover:block">
+                        <li className="h-8 w-40 border-b-2 px-2 pt-1 hover:bg-gray-200">
+                          Dell
+                        </li>
+                        <li className="h-8 w-40 border-b-2 px-2 pt-1 hover:bg-gray-200">
+                          Hp
+                        </li>
+                        <li className="h-8 w-40 px-2 pt-1 hover:bg-gray-200">
+                          Lenovo
+                        </li>
+                      </ul>
+                    </div>
                   </li>
-                  <li className="flex flex-row items-center border-b border-gray-200 p-3 hover:rounded-t hover:bg-gray-200">
-                    <BiLaptop className="w-12" /> <p>Laptop</p>
+                  <li className="shrink-0 py-2 px-2">
+                    <span className="border-b-4 border-gray-400 hover:border-blue-900 hover:text-blue-900">
+                      New Arrival
+                    </span>
                   </li>
-                  <li className="flex flex-row items-center border-b border-gray-200 p-3 hover:rounded-t hover:bg-gray-200">
-                    <BiPrinter className="w-12" /> <p>Printer</p>
+                  <li className=" shrink-0 py-2 px-2">
+                    <span className="border-b-4 border-gray-400 hover:border-blue-900 hover:text-blue-900">
+                      Special Offers
+                    </span>
                   </li>
-                  <li className="flex flex-row items-center border-b border-gray-200 p-3 hover:rounded-t hover:bg-gray-200">
-                    <MdOutlineScanner className="w-12" /> <p>Scanner</p>
-                  </li>
-                  <li className="flex flex-row items-center border-b border-gray-200 p-3 hover:rounded-t hover:bg-gray-200">
-                    <GiServerRack className="w-12" /> <p>Server</p>
+                  <li className="py-2 px-2">
+                    <span className="border-b-4 border-gray-400 hover:border-blue-900 hover:text-blue-900">
+                      Brands
+                    </span>
                   </li>
                 </ul>
               </div>
-            </button>
+            </div>
+            {/* Cart Icons */}
+            <div className="order-last basis-2/12 p-1 desktop:order-6">
+              <div className="flex h-full items-center justify-center">
+                <Link to="/cart">
+                  <button className="btn-icon btn-primary desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
+                    {cartIcon}
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
-          <Navigationbar />
-          <AccountLogin />
         </div>
       </div>
     </>
