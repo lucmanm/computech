@@ -55,6 +55,12 @@ module.exports = {
         dark: "#212529",
         "light-gray": "#F7F7F7",
       },
+      minWidth: {
+      '5': '1.25rem',
+    },
+      maxWidth: {
+      '14': '3.5rem',
+      },
     },
   },
   plugins: [
