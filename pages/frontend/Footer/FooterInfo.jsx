@@ -9,31 +9,18 @@ export const FooterInfo = () => {
             className="mx-auto rounded-lg"
             src={CompuTechLogoTrans}
             alt=""
-            width="200"
-            height="200"
+            sizes="200"
           />
         </div>
         <div className="px-6  pb-6 tablet:flex-1">
           <ul className="prose prose-ul:list-none prose-li:flex prose-li:flex-row prose-li:place-content-center prose-li:text-sm tablet:prose-li:place-content-start">
+            <li>Contact info</li>
+            <li>PHONE: 012 651 5259 EXT. 103</li>
             <li>
-              <h3>CONTACT INFO</h3>
+              HOURS: 6 DAYS A WEEKS 9:30PM TO 1:30PM &AMP; 5:00PM TO 10:00PM
             </li>
-            <li>
-              <div>PHONE: 012 651 5259 EXT. 103</div>
-            </li>
-            <li>
-              <div>
-                HOURS: 6 DAYS A WEEKS 9:30PM TO 1:30PM &AMP; 5:00PM TO 10:00PM
-              </div>
-            </li>
-            <li>
-              <div>E-MAIL: SALES@COMPU-TECH.COM.SA</div>
-            </li>
-            <li>
-              <div>
-                ADDRESS: KHALID BIN AL WALID STREET, JEDDAH, SAUDI ARABIA
-              </div>
-            </li>
+            <li>Email: SALES@COMPU-TECH.COM.SA</li>
+            <li>ADDRESS: KHALID BIN AL WALID STREET, JEDDAH, SAUDI ARABIA</li>
           </ul>
         </div>
         <div className="flex tablet:flex-1">
@@ -60,6 +47,12 @@ export const FooterInfo = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="flex flex-row flex-wrap border">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
       </div>
       <div className="bg-blue-900 p-3 text-center text-sm text-white">
         <p>

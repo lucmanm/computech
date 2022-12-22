@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "../pages/frontend/Header/";
 import { Products } from "../pages/frontend/";
-import { Footer } from "../pages/frontend/footer/Footer";
+import { FooterInfo, Subscribe } from "../pages/frontend/footer/";
 import { Login as CpLogin } from "../pages/frontend/Components/Login";
 import { Register as CpRegister } from "../pages/frontend/Components/Register";
 import { Login } from "../pages/frontend/Pages/Login";
@@ -38,7 +38,8 @@ function App() {
         <Route path="cart" element={<Cart />} />
       </Routes>
       <Banners />
-      <Footer />
+      <Subscribe />
+      <FooterInfo />
       <IconHzBar />
     </div>
   );
