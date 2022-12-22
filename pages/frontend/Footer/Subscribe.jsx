@@ -1,5 +1,6 @@
 import React from "react";
 import { icons } from "../assets/data/data";
+
 const Subscribe = () => {
   return (
     <>
