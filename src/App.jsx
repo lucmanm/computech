@@ -19,10 +19,11 @@ import {
 } from "../pages/frontend/Pages/account";
 import { IconHzBar } from "../pages/frontend/components/IconHzBar";
 import { Banners } from "../pages/frontend/components/Banners";
+import { Brands } from "../pages/frontend/components/Brands";
 
 function App() {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-100">
       <Header />
       <Routes>
         <Route index element={<Products />}></Route>
@@ -38,6 +39,7 @@ function App() {
         </Route>
         <Route path="cart" element={<Cart />} />
       </Routes>
+      <Brands />
       <Banners />
       <Subscribe />
       <FooterInfo />
