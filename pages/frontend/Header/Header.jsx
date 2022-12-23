@@ -2,7 +2,6 @@ import React from "react";
 import { Navigationbar } from "./Navigationbar";
 import { FrontSideNav } from "./FrontSideNav";
 import { Link } from "react-router-dom";
-import { AccountLogin } from "./AccountLogin";
 import CompuTechLogo from "../assets/img/CompuTechLogo.png";
 
 import { HiMenu } from "react-icons/hi";
@@ -11,12 +10,14 @@ import { MdOutlineScanner } from "react-icons/md";
 import { GiServerRack } from "react-icons/gi";
 
 import { icons, mobIcons } from "../assets/data/data";
+import { TopNavigation } from "./TopNavigation";
 export const Header = () => {
   const { languageIcon, personIcon, heartIcon, cartIcon } = icons;
   return (
     <>
       <div className="bg-white shadow-md">
         <div className=" desktop:container">
+          <TopNavigation />
           <div className="flex flex-row flex-wrap py-2">
             <div className="order-2 basis-2/12 items-center p-1 desktop:order-1">
               <div className="flex h-full items-center justify-center">

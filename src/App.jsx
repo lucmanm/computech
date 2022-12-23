@@ -25,6 +25,7 @@ import { ProductPreview } from "../pages/frontend/Pages/ProductPreview";
 
 function App() {
   const location = useLocation();
+  const { pathname } = location;
 
   return (
     <div className="bg-gray-100">
@@ -44,8 +45,10 @@ function App() {
         <Route path="cart" element={<Cart />} />
         <Route path="productpreview" element={<ProductPreview />} />
       </Routes>
-      {location.pathname !== "/cart" ? <Brands /> : ""}
-      {location.pathname !== "/cart" ? <Banners /> : ""}
+
+      {pathname === "/" && <Brands />}
+      {pathname === "/" && <Banners />}
+
       <Subscribe />
       <FooterInfo />
       <IconHzBar />
