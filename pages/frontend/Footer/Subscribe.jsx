@@ -22,7 +22,7 @@ const Subscribe = () => {
             </span>
             <span>
               <input
-                className="btn btn-primary mobile:btn-sm rounded-full"
+                className="btn btn-primary  rounded-full"
                 type="button"
                 value="Subscribe"
               />

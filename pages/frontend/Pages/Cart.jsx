@@ -33,7 +33,7 @@ export const Cart = () => {
             </div>
             <div className="flex flex-row justify-between">
               {/* Delete Item Icon */}
-              <button className="btn btn-danger btn-sm rounded-full">
+              <button className="btn btn-danger rounded-full">
                 {deleteIcon}
               </button>
               <div className="flex flex-wrap items-center justify-center gap-x-1">
