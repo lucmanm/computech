@@ -4,10 +4,8 @@ export const Profile = () => {
   return (
     <>
       <profile>
-        <div className="flex  flex-col justify-center p-4">
-          <div className="mb-2 rounded-sm bg-blue-900 p-1 font-bold text-white">
-            Profile
-          </div>
+        <div className="flex flex-col justify-center p-4">
+          <div className="card-title">Profile</div>
           <hr className="my-2" />
           <span>Personal Details</span>
           <hr className="my-2" />

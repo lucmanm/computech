@@ -5,7 +5,7 @@ export const IconHzBar = () => {
   const { homeIc, personIc, shopIc, searchIc, menuIc } = mobIcons;
   return (
     <>
-      <div className="fixed bottom-0 z-100 flex w-full flex-row items-center justify-evenly bg-blue-900 text-white shadow-xl shadow-gray-700 desktop:hidden">
+      <div className="fixed bottom-0 z-100 flex w-full flex-row items-center justify-evenly bg-blue-900 text-white  desktop:hidden">
         <NavLink className="btn-icon btn-primary grow py-3" to="/">
           <div className="mx-auto w-fit">{homeIc}</div>
         </NavLink>

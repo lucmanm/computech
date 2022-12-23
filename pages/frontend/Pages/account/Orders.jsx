@@ -5,9 +5,7 @@ export const Orders = () => {
     <>
       <orders>
         <div className="flex flex-col justify-center p-4">
-          <div className="mb-2 rounded-sm bg-blue-900 p-1 font-bold text-white">
-            Orders
-          </div>
+          <div className="card-title">Orders</div>
           {/* Orders Listing */}
           <div className="border-y-2 py-1">
             <span>Order #: 1265456465</span>

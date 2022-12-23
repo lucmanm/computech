@@ -5,9 +5,7 @@ export const Address = () => {
     <>
       <myaddress>
         <div className="ital flex flex-col justify-center p-4">
-          <div className="mb-2 rounded-sm bg-blue-900 p-1 font-bold text-white">
-            Address
-          </div>
+          <div className="card-title">Address</div>
           <hr className="my-2" />
           <span>Primary Address</span>
           <hr className="my-2" />

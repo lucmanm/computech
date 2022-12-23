@@ -4,7 +4,7 @@ import aioimg from "../assets/img/aioimg.jpg";
 export const ProductPreview = () => {
   return (
     <>
-      <div className="prose p-2 text-sm prose-h1:m-0 prose-h1:text-base prose-h1:font-semibold prose-table:m-0 prose-th:text-base prose-img:m-0 desktop:container desktop:text-base desktop:prose-h1:text-lg">
+      <div className="tw-typo-product mt-4 desktop:container">
         <div className="grid grid-cols-1 gap-2 desktop:grid-cols-6">
           <div className="order-2 desktop:order-1 desktop:col-span-2 desktop:row-span-2">
             <img src={aioimg} alt="All in one Image" />
