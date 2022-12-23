@@ -5,9 +5,9 @@ export const Cart = () => {
   const { deleteIcon } = icons;
   return (
     <>
-      {/* Mobile, Tablet & Desktop */}
-      <div className="my-5 mx-2 flex flex-col flex-wrap gap-2 text-sm tablet:mx-2 tablet:flex-row desktop:container">
-        <div className="card basis-full tablet:basis-2/3">
+      {/* Mobile, md & Desktop */}
+      <div className="my-5 mx-2 flex flex-col flex-wrap gap-2 text-sm md:mx-2 md:flex-row desktop:container">
+        <div className="card basis-full md:basis-2/3">
           <div className="card-title">Cart</div>
           {/* Cart Products */}
           <div className=" border-b border-blue-900 pb-1">
@@ -51,7 +51,7 @@ export const Cart = () => {
           </div>
         </div>
         {/* Summary Order */}
-        <div className="card basis-full tablet:h-fit tablet:basis-1/4">
+        <div className="card basis-full md:h-fit md:basis-1/4">
           <div className="card-title">Order Summary</div>
           <div>
             <section className="flex flex-col flex-wrap">

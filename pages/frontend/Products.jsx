@@ -17,7 +17,7 @@ export const Products = () => {
   const { heartIcon, cartIcon, compare } = icons;
 
   return (
-    <div className="relative my-5 mx-2 grid  h-fit grid-cols-2 justify-evenly gap-2 tablet:grid-cols-3 desktop:container desktop:grid-cols-5">
+    <div className="relative my-5 mx-2 grid  h-fit grid-cols-2 justify-evenly gap-2 md:grid-cols-3 desktop:container desktop:grid-cols-5">
       {prod.slice(0, 5).map(({ id, description, price, images: [image1] }) => (
         <div key={id}>
           <div className="group prose relative flex cursor-pointer flex-col gap-2 overflow-hidden rounded-md border border-blue-900 bg-white p-3 text-sm hover:border-blue-700 hover:shadow hover:shadow-gray-400">

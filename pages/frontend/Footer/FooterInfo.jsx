@@ -15,10 +15,10 @@ export const FooterInfo = () => {
       {/* Company Information */}
       <div className="mt-2 bg-gray-100">
         <div className="flex flex-row flex-wrap desktop:container">
-          <div className="flex basis-2/6 items-center justify-center tablet:basis-1/6">
+          <div className="flex basis-2/6 items-center justify-center md:basis-1/6">
             <img className="h-40 w-40" src={CompuTechLogoTrans} alt="" />
           </div>
-          <div className="basis-4/6 tablet:basis-3/6">
+          <div className="basis-4/6 md:basis-3/6">
             <ul className="prose text-sm leading-snug">
               <li>
                 <h3 className="m-0">Contact Us!</h3>
@@ -33,7 +33,7 @@ export const FooterInfo = () => {
               </li>
             </ul>
           </div>
-          <div className="mt-4 flex basis-full flex-row flex-wrap text-center tablet:mt-0 tablet:basis-2/6 tablet:text-left">
+          <div className="mt-4 flex basis-full flex-row flex-wrap text-center md:mt-0 md:basis-2/6 md:text-left">
             <div className="basis-1/2">
               <ul className="prose text-sm">
                 <li>
@@ -62,19 +62,19 @@ export const FooterInfo = () => {
         {/* Payment and Shipping Company Logo */}
         <div className="my-2 desktop:container">
           <div className="my-4 mx-auto flex w-fit shrink-0 flex-row flex-wrap gap-4 desktop:ml-10">
-            <div className="w-12 min-w-5 max-w-14 tablet:w-14">
+            <div className="w-12 min-w-5 max-w-14 md:w-14">
               <img src={madaPayment} alt="" />
             </div>
-            <div className="w-12 min-w-5 max-w-14 tablet:w-14">
+            <div className="w-12 min-w-5 max-w-14 md:w-14">
               <img src={visaPayment} alt="" />
             </div>
-            <div className="w-12 min-w-5 max-w-14 tablet:w-14">
+            <div className="w-12 min-w-5 max-w-14 md:w-14">
               <img src={masterCardPayment} alt="" />
             </div>
-            <div className="w-12 min-w-5 max-w-14 tablet:w-14">
+            <div className="w-12 min-w-5 max-w-14 md:w-14">
               <img src={applePay} alt="" />
             </div>
-            <div className="w-12 min-w-5 max-w-14 tablet:w-14">
+            <div className="w-12 min-w-5 max-w-14 md:w-14">
               <img src={aramexShipping} alt="" />
             </div>
           </div>

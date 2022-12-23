@@ -1,4 +1,4 @@
-// /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
   content: [
@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     screens: {
       mobile: "640",
-      tablet: "768px",
+      md: "768px",
       desktop: "1280px",
     },
     container: {
@@ -56,10 +56,16 @@ module.exports = {
         "light-gray": "#F7F7F7",
       },
       minWidth: {
-      '5': '1.25rem',
-    },
+        5: "1.25rem",
+        16: "4rem",
+      },
       maxWidth: {
-      '14': '3.5rem',
+        14: "3.5rem",
+        20: "5rem",
+        28: "7rem",
+      },
+      zIndex: {
+        100: "100",
       },
     },
   },
