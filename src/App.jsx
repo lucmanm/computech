@@ -7,9 +7,9 @@ import { Login as CpLogin } from "../pages/frontend/components/Login";
 import { Register as CpRegister } from "../pages/frontend/components/Register";
 import { Login } from "../pages/frontend/Pages/Login";
 import { Cart } from "../pages/frontend/Pages/Cart";
-import { Brands } from "../pages/frontend/Components/Brands";
+
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import {
   Profile,
   Account,
@@ -18,10 +18,14 @@ import {
   WishList,
 } from "../pages/frontend/Pages/account";
 import { IconHzBar } from "../pages/frontend/components/IconHzBar";
+
 import { Banners } from "../pages/frontend/components/Banners";
+import { Brands } from "../pages/frontend/Components/Brands";
 import { ProductPreview } from "../pages/frontend/Pages/ProductPreview";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="bg-gray-100">
       <Header />
@@ -40,8 +44,8 @@ function App() {
         <Route path="cart" element={<Cart />} />
         <Route path="productpreview" element={<ProductPreview />} />
       </Routes>
-      <Brands />
-      <Banners />
+      {location.pathname !== "/cart" ? <Brands /> : ""}
+      {location.pathname !== "/cart" ? <Banners /> : ""}
       <Subscribe />
       <FooterInfo />
       <IconHzBar />

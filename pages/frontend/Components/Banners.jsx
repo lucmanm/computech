@@ -1,5 +1,4 @@
 import React from "react";
-
 export const Banners = () => {
   return (
     <>
@@ -11,7 +10,7 @@ export const Banners = () => {
           640x128
         </div>
         <div className="col-span-6 h-24 bg-blue-900 text-center text-white md:h-32">
-          1280x128
+          1280x128asdasda
         </div>
         <div className="col-span-2 h-24 bg-blue-900 text-center text-white md:h-32">
           426x128
