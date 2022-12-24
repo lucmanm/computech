@@ -11,9 +11,9 @@ export const Account = () => {
 
   return (
     <>
-      <div className="grid h-fit grid-cols-9 desktop:container">
-        {/*SideBar menus for account information */}
-        <div className="col-span-2 my-5 hidden rounded-md border bg-white shadow-md desktop:block">
+      <div className="my-5 mx-2 grid h-fit grid-cols-9 gap-2 desktop:container">
+        {/*SideBar menus for account information desktop*/}
+        <div className="col-span-9  rounded-md border bg-white shadow-md desktop:col-span-2">
           <div className="flex flex-col content-center items-center justify-center  p-2 text-center">
             <span className="text-blue-900">
               <CgProfile className="h-16 w-16 " />
@@ -37,8 +37,7 @@ export const Account = () => {
                   key={pathdir}
                   className={({ isActive }) =>
                     isActive ? activeLink : normalLink
-                  }
-                >
+                  }>
                   {icon}
                   <span className="capatilize">{name}</span>
                 </NavLink>
@@ -46,7 +45,7 @@ export const Account = () => {
             </div>
           ))}
         </div>
-        <div className="col-span-9 my-5 ml-2 rounded-md bg-white shadow-md desktop:col-span-7">
+        <div className="col-span-9 rounded-md bg-white shadow-md desktop:col-span-7">
           <Outlet />
         </div>
       </div>

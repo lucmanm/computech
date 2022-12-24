@@ -9,15 +9,11 @@ export const WishList = () => {
           {/* Orders Listing */}
           <div className="flex flex-col rounded-md border border-blue-900 p-1">
             <div className="flex items-center">
-              <div>
-                <img
-                  src={aioimg}
-                  alt="All  in one Image"
-                  className="h-24 w-24"
-                />
+              <div className="basis-1/4 desktop:basis-1/6">
+                <img src={aioimg} alt="All  in one Image" className="w-full" />
               </div>
-              <div className="py-1 px-4">
-                <p>Model: Model Name</p>
+              <div className="basis-3/4 py-1 px-4 desktop:basis-5/6">
+                <p className="font-semibold">Model: Model Name</p>
                 <p>
                   Description: Lorem ipsum dolor, sit amet consectetur
                   adipisicing elit. Nihil quo doloribus ipsam natus voluptate

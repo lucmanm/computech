@@ -22,6 +22,7 @@ import { Banners } from "../pages/frontend/components/Banners";
 import { Brands } from "../pages/frontend/Components/Brands";
 import { ProductPreview } from "../pages/frontend/Pages/ProductPreview";
 import { SearchProducts } from "../pages/frontend/components/SearchProducts";
+import { PageNotFound } from "../pages/frontend/Pages/PageNotFound";
 function App() {
   const location = useLocation();
   const { pathname } = location;
@@ -30,23 +31,24 @@ function App() {
     <div className="bg-gray-100">
       <Header />
       <SearchProducts />
+      {pathname === "/" && <Products />}
       <Routes>
-        <Route index element={<Products />}></Route>
+        <Route path="/products" element={<Products />}>
+          <Route path=":useId" element={<ProductPreview />} />
+        </Route>
+
         <Route path="/login" element={<Login />}>
           <Route index element={<CpLogin />} />
           <Route path="register" element={<CpRegister />} />
         </Route>
         <Route path="cart" element={<Cart />} />
-        <Route path="productpreview" element={<ProductPreview />} />
-      </Routes>
-
-      <Routes>
         <Route path="/account" element={<Account />}>
           <Route index element={<Profile />} />
           <Route path="address" element={<Address />} />
           <Route path="orders" element={<Orders />} />
           <Route path="wishlist" element={<WishList />} />
         </Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
 
       {pathname === "/" && <Brands />}

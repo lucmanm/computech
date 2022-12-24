@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import aioimg from "../assets/img/aioimg.jpg";
+import { useLocation } from "react-router-dom";
 
 export const ProductPreview = () => {
+  const location = useLocation();
+  const { key } = location;
+  console.log(key);
+  // const { useId } = useParams();
+  // const [prod, setProd] = useState({});
+  // const apiUrl = `https://dummyjson.com/products/${params.useId}`;
+  // const apiFitch = async () => {
+  //   const response = await fetch(apiUrl);
+  //   const responseData = await response.json();
+  //   setProd(responseData.products);
+  // };
+
+  // useEffect(() => {
+  //   apiFitch();
+  // }, []);
   return (
     <>
       <div className="tw-typo-product mt-4 desktop:container">
@@ -12,6 +28,7 @@ export const ProductPreview = () => {
           {/* Description */}
           <div className="order-1 line-clamp-3 desktop:order-2 desktop:col-span-4 desktop:h-24">
             <h1>
+              {prod.title}
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Repudiandae dolore perspiciatis deserunt, dolores temporibus iusto
               distinctio et, quas sit maxime totam neque nam, vero consectetur

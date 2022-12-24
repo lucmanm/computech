@@ -11,10 +11,10 @@ export const Orders = () => {
             <span>Order #: 1265456465</span>
           </div>
           <div className=" flex items-center">
-            <div>
-              <img src={aioimg} alt="All  in one Image" className="h-24 w-24" />
+            <div className="basis-1/4 desktop:basis-1/6">
+              <img src={aioimg} alt="All  in one Image" className="w-full" />
             </div>
-            <div className="py-1 px-4">
+            <div className="basis-3/4 py-1 px-4 desktop:basis-5/6">
               <p>Date: 17/12/2022</p>
               <p>Model: Model Name</p>
               <p>Brand: Brand Name</p>

@@ -12,8 +12,7 @@ export const IconHzBar = () => {
         </NavLink>
         <NavLink
           className="btn-icon btn-primary grow py-3"
-          to="/searchproducts"
-        >
+          to="/searchproducts">
           <div className="mx-auto w-fit">{searchIc}</div>
         </NavLink>
         <NavLink className="btn-icon btn-primary grow py-3" to="/cart">
@@ -23,9 +22,7 @@ export const IconHzBar = () => {
           <div className="mx-auto w-fit">{personIc}</div>
         </NavLink>
         <NavLink className="btn-icon btn-primary grow py-3" to="#">
-          <button type="button" className="mx-auto w-fit border">
-            {menuIc}
-          </button>
+          <div className="mx-auto w-fit border">{menuIc}</div>
         </NavLink>
       </div>
     </>
