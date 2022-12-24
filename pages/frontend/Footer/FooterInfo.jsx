@@ -80,7 +80,7 @@ export const FooterInfo = () => {
           </div>
         </div>
         {/* No Copyright infregmens section */}
-        <div className="bg-blue-900 p-3 text-center text-sm text-white">
+        <div className="mb-10 bg-blue-900 p-3 text-center text-sm text-white desktop:m-0">
           <p>
             COPYRIGHT © 2022. COMPUTECH COMPANY. C. R. NO. 4030079509 VAT ID
             311079231900003. ALL RIGHTS RESERVED.

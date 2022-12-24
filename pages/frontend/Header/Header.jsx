@@ -16,9 +16,9 @@ export const Header = () => {
   return (
     <>
       <div className="bg-white shadow-md">
-        <div className=" desktop:container">
-          <TopNavigation />
-          <div className="flex flex-row flex-wrap py-2">
+        <TopNavigation />
+        <div className="py-2 desktop:container">
+          <div className="flex flex-row flex-wrap">
             <div className="order-2 basis-2/12 items-center p-1 desktop:order-1">
               <div className="flex h-full items-center justify-center">
                 <Link to="/">
