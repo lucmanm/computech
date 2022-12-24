@@ -35,7 +35,7 @@ function App() {
           <Route index element={<CpLogin />} />
           <Route path="register" element={<CpRegister />} />
         </Route>
-        <Route path="account" element={<Account />}>
+        <Route path="/account" element={<Account />}>
           <Route index element={<Profile />} />
           <Route path="address" element={<Address />} />
           <Route path="orders" element={<Orders />} />

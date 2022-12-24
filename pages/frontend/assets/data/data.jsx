@@ -66,12 +66,12 @@ export const feAccount = [
     links: [
       {
         name: "My Profile",
-        pathdir: "Profile",
+        pathdir: "/account/",
         icon: <CgProfile />,
       },
       {
         name: "My Address",
-        pathdir: "Address",
+        pathdir: "/account/address",
         icon: <BsTruck />,
       },
     ],
@@ -82,7 +82,7 @@ export const feAccount = [
     links: [
       {
         name: "Manage Orders",
-        pathdir: "Orders",
+        pathdir: "/account/orders",
         icon: <BsCartCheck />,
       },
     ],
@@ -93,7 +93,7 @@ export const feAccount = [
     links: [
       {
         name: "WishList",
-        pathdir: "Wishlist",
+        pathdir: "/account/wishlist",
         icon: <BsHeart />,
       },
     ],
