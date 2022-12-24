@@ -19,7 +19,7 @@ import { CiDesktop } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { MdCompare } from "react-icons/md";
 import { AiOutlineDelete } from "react-icons/ai";
-
+import aioimg from "../img/aioimg.jpg";
 export const icons = {
   personIcon: <BsPerson size={24} />,
   heartIcon: <BsHeart size={24} />,
@@ -43,6 +43,38 @@ export const langauge = {
   arabic: "عربى",
 };
 
+export const ProdCatImag = [
+  {
+    id: 1,
+    title: "All in One PC",
+    image: aioimg,
+  },
+  {
+    id: 2,
+    title: "Computers",
+    image: aioimg,
+  },
+  {
+    id: 3,
+    title: "Monitor",
+    image: aioimg,
+  },
+  {
+    id: 4,
+    title: "Laptop",
+    image: aioimg,
+  },
+  {
+    id: 5,
+    title: "Printers",
+    image: aioimg,
+  },
+  {
+    id: 6,
+    title: "Server",
+    image: aioimg,
+  },
+];
 export const categoryIcon = [
   {
     title: "Computers",

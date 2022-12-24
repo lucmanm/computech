@@ -3,15 +3,15 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export const Login = () => {
   const activeLink =
-    "mt-2 block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md font-bold text-blue-900 ring-2 ring-blue-900";
+    "mt-2 block rounded-sm bg-white p-5 text-center font-medium shadow font-bold text-blue-900 ring-2 ring-blue-900";
   const normalLink =
-    "mt-2 block rounded-sm bg-white p-5 text-center font-medium drop-shadow-md ";
+    "mt-2 block rounded-sm bg-white p-5 text-center font-medium shadow ";
   return (
     <>
       <div className="grid desktop:container desktop:grid-cols-2 ">
         <div>
-          <div className="mx-auto mt-12 w-1/2 px-4">
-            <span>
+          <div className="mx-2 mt-12 grid grid-cols-2 gap-3 desktop:my-20 desktop:mx-auto desktop:w-1/2 desktop:grid-cols-1">
+            <div>
               <NavLink
                 end
                 className={({ isActive }) =>
@@ -24,8 +24,8 @@ export const Login = () => {
                   Use a permanent address where you can receive mail.
                 </p>
               </NavLink>
-            </span>
-            <span>
+            </div>
+            <div>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? activeLink : normalLink
@@ -34,10 +34,10 @@ export const Login = () => {
               >
                 <span>Register</span>
                 <p className="mt-1 text-gray-600">
-                  if you don't have an account. Create your account now!
+                  if you don't have an account. Create now!
                 </p>
               </NavLink>
-            </span>
+            </div>
           </div>
         </div>
         {/* className='bg-white ring-2 focus:ring-blue-900 rounded-sm p-5 drop-shadow-md font-medium' */}

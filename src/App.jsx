@@ -21,7 +21,7 @@ import { IconHzBar } from "../pages/frontend/components/IconHzBar";
 import { Banners } from "../pages/frontend/components/Banners";
 import { Brands } from "../pages/frontend/Components/Brands";
 import { ProductPreview } from "../pages/frontend/Pages/ProductPreview";
-
+import { SearchProducts } from "../pages/frontend/components/SearchProducts";
 function App() {
   const location = useLocation();
   const { pathname } = location;
@@ -29,25 +29,28 @@ function App() {
   return (
     <div className="bg-gray-100">
       <Header />
+      <SearchProducts />
       <Routes>
         <Route index element={<Products />}></Route>
         <Route path="/login" element={<Login />}>
           <Route index element={<CpLogin />} />
           <Route path="register" element={<CpRegister />} />
         </Route>
+        <Route path="cart" element={<Cart />} />
+        <Route path="productpreview" element={<ProductPreview />} />
+      </Routes>
+
+      <Routes>
         <Route path="/account" element={<Account />}>
           <Route index element={<Profile />} />
           <Route path="address" element={<Address />} />
           <Route path="orders" element={<Orders />} />
           <Route path="wishlist" element={<WishList />} />
         </Route>
-        <Route path="cart" element={<Cart />} />
-        <Route path="productpreview" element={<ProductPreview />} />
       </Routes>
 
       {pathname === "/" && <Brands />}
       {pathname === "/" && <Banners />}
-
       <Subscribe />
       <FooterInfo />
       <IconHzBar />

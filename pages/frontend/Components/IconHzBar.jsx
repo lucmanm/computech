@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { mobIcons } from "../assets/data/data";
+import { SearchProducts } from "./SearchProducts";
 export const IconHzBar = () => {
   const { homeIc, personIc, shopIc, searchIc, menuIc } = mobIcons;
   return (
@@ -9,7 +10,10 @@ export const IconHzBar = () => {
         <NavLink className="btn-icon btn-primary grow py-3" to="/">
           <div className="mx-auto w-fit">{homeIc}</div>
         </NavLink>
-        <NavLink className="btn-icon btn-primary grow py-3" to="#">
+        <NavLink
+          className="btn-icon btn-primary grow py-3"
+          to="/searchproducts"
+        >
           <div className="mx-auto w-fit">{searchIc}</div>
         </NavLink>
         <NavLink className="btn-icon btn-primary grow py-3" to="/cart">
@@ -19,7 +23,9 @@ export const IconHzBar = () => {
           <div className="mx-auto w-fit">{personIc}</div>
         </NavLink>
         <NavLink className="btn-icon btn-primary grow py-3" to="#">
-          <div className="mx-auto w-fit">{menuIc}</div>
+          <button type="button" className="mx-auto w-fit border">
+            {menuIc}
+          </button>
         </NavLink>
       </div>
     </>
