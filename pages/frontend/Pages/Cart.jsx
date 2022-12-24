@@ -6,13 +6,13 @@ export const Cart = () => {
   return (
     <>
       {/* Mobile, md & Desktop */}
-      <div className="my-5 mx-2 flex flex-col flex-wrap gap-2 text-sm md:mx-2 md:flex-row desktop:container">
+      <div className="my-5 mx-2 flex flex-col flex-wrap gap-2  md:mx-2 md:flex-row desktop:container">
         <div className="card basis-full md:basis-2/3">
           <div className="card-title">Cart</div>
           {/* Cart Products */}
           <div className=" border-b border-blue-900 pb-1">
             {/* images of the Item */}
-            <div className="flex flex-row flex-wrap items-center text-sm">
+            <div className="flex flex-row flex-wrap items-center ">
               <div className="shrink-0 grow-0 basis-2/12">
                 <img
                   src={aioimg}
@@ -41,7 +41,7 @@ export const Cart = () => {
                 <button className="btn btn-primary font-bold">-</button>
                 <input
                   type="text"
-                  className="h-fit w-11 flex-initial justify-center rounded-md  py-2 px-3 text-center text-sm font-medium"
+                  className="h-fit w-11 flex-initial justify-center rounded-md  py-2 px-3 text-center  font-medium"
                   value="1"
                   onChange={() => {}}
                 />

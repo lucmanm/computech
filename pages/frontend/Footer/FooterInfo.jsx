@@ -19,7 +19,7 @@ export const FooterInfo = () => {
             <img className="h-40 w-40" src={CompuTechLogoTrans} alt="" />
           </div>
           <div className="basis-4/6 md:basis-3/6">
-            <ul className="prose text-sm leading-snug">
+            <ul className="prose  leading-snug">
               <li>
                 <h3 className="m-0">Contact Us!</h3>
               </li>
@@ -35,7 +35,7 @@ export const FooterInfo = () => {
           </div>
           <div className="mt-4 flex basis-full flex-row flex-wrap text-center md:mt-0 md:basis-2/6 md:text-left">
             <div className="basis-1/2">
-              <ul className="prose text-sm">
+              <ul className="prose ">
                 <li>
                   <h3 className="m-0">COMPANY</h3>
                 </li>
@@ -47,7 +47,7 @@ export const FooterInfo = () => {
               </ul>
             </div>
             <div className="basis-1/2">
-              <ul className="prose text-sm">
+              <ul className="prose ">
                 <li>
                   <h3 className="m-0">HELP</h3>
                 </li>
@@ -80,7 +80,7 @@ export const FooterInfo = () => {
           </div>
         </div>
         {/* No Copyright infregmens section */}
-        <div className="mb-10 bg-blue-900 p-3 text-center text-sm text-white desktop:m-0">
+        <div className="mb-14 bg-blue-900 p-3 text-center  text-white desktop:m-0">
           <p>
             COPYRIGHT © 2022. COMPUTECH COMPANY. C. R. NO. 4030079509 VAT ID
             311079231900003. ALL RIGHTS RESERVED.

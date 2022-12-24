@@ -10,7 +10,7 @@ export const Orders = () => {
           <div className="border-y-2 py-1">
             <span>Order #: 1265456465</span>
           </div>
-          <div className=" flex items-center text-sm ">
+          <div className=" flex items-center">
             <div>
               <img src={aioimg} alt="All  in one Image" className="h-24 w-24" />
             </div>

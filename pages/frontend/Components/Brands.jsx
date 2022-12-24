@@ -5,7 +5,7 @@ export const Brands = () => {
   return (
     <>
       <div className="desktop:container">
-        <div className=" p-1 text-sm font-semibold">Shop by Brand</div>
+        <div className=" p-1 font-semibold">Shop by Brand</div>
         <div className="flex flex-row items-center justify-center gap-2 ">
           <div className=" w-16 min-w-16 max-w-28 rounded-md border bg-white md:h-14 md:w-28">
             <img

@@ -18,7 +18,6 @@ import {
   WishList,
 } from "../pages/frontend/Pages/account";
 import { IconHzBar } from "../pages/frontend/components/IconHzBar";
-
 import { Banners } from "../pages/frontend/components/Banners";
 import { Brands } from "../pages/frontend/Components/Brands";
 import { ProductPreview } from "../pages/frontend/Pages/ProductPreview";

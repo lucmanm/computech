@@ -28,7 +28,7 @@ export const Login = () => {
                   type="email"
                   autoComplete="email"
                   required
-                  className="sm:text-sm relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-900"
+                  className=" relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-900"
                   placeholder="Email address"
                 />
               </div>
@@ -42,7 +42,7 @@ export const Login = () => {
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="sm:text-sm relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-900"
+                  className=" relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-900"
                   placeholder="Password"
                 />
               </div>
@@ -57,13 +57,13 @@ export const Login = () => {
                 />
                 <label
                   htmlFor="remember-me"
-                  className="ml-2 block text-sm text-gray-900"
+                  className="ml-2 block text-gray-900"
                 >
                   Remember me
                 </label>
               </div>
 
-              <div className="text-sm">
+              <div>
                 <a
                   href="#"
                   className="font-medium text-blue-900 hover:text-blue-500"
@@ -76,7 +76,7 @@ export const Login = () => {
             <div>
               <button
                 type="submit"
-                className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue-900 py-2 px-4 text-sm font-medium text-white  hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2"
+                className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue-900 py-2 px-4 font-medium text-white  hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2"
               >
                 LogIn
               </button>

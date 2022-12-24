@@ -9,7 +9,7 @@ export const Address = () => {
           <hr className="my-2" />
           <span>Primary Address</span>
           <hr className="my-2" />
-          <div className=" text-sm text-gray-500">
+          <div className=" text-gray-500">
             <p>Home</p>
             <p>Jeddah, Al Sharifiya</p>
             <p>

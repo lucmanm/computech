@@ -7,7 +7,7 @@ import { GiServerRack } from "react-icons/gi";
 export const FrontSideNav = () => {
   return (
     <>
-      <button className="group relative my-2 flex shrink-0 cursor-pointer items-center justify-center rounded bg-blue-900 py-3 px-4 text-sm font-semibold uppercase">
+      <button className="group relative my-2 flex shrink-0 cursor-pointer items-center justify-center rounded bg-blue-900 py-3 px-4  font-semibold uppercase">
         <p className="text-white">Shop By Categories</p>
         <HiMenu className="w-12" />
         <div className="shadow-dm invisible absolute top-full mt-2 w-max min-w-full rounded bg-gray-100 text-black group-hover:block group-focus:visible">

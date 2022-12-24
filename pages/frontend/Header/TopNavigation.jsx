@@ -8,7 +8,7 @@ export const TopNavigation = () => {
   return (
     <>
       <div className="bg-gray-100">
-        <div className="relative flex flex-row items-center justify-between px-2 py-2 text-sm font-semibold text-blue-900 desktop:container">
+        <div className="relative flex flex-row items-center justify-between px-2 py-2  font-semibold text-blue-900 desktop:container">
           <div className="flex flex-row flex-wrap">
             <Link
               className="flex flex-row flex-wrap items-center gap-2 border-r-2 px-2  hover:text-blue-700"

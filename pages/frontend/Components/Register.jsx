@@ -21,7 +21,7 @@ export const Register = () => {
               </p>
             </div>
           </div>
-          <div className="md:col-span-2 md:mt-0 mt-5">
+          <div className="mt-5 md:col-span-2 md:mt-0">
             <form action="#" method="POST">
               <div className="sm:rounded-md  overflow-hidden">
                 <div className=" sm:p-6 px-4 py-5">
@@ -38,7 +38,7 @@ export const Register = () => {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
-                        className="sm:text-sm mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
+                        className=" mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
                       />
                     </div>
 
@@ -54,7 +54,7 @@ export const Register = () => {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
-                        className="sm:text-sm mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
+                        className=" mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
                       />
                     </div>
 
@@ -70,7 +70,7 @@ export const Register = () => {
                         name="email-address"
                         id="email-address"
                         autoComplete="email"
-                        className="sm:text-sm mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
+                        className=" mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
                       />
                     </div>
 
@@ -86,7 +86,7 @@ export const Register = () => {
                         name="email-address"
                         id="email-address"
                         autoComplete="email"
-                        className="sm:text-sm mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
+                        className=" mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
                       />
                     </div>
 
@@ -102,7 +102,7 @@ export const Register = () => {
                         name="email-address"
                         id="email-address"
                         autoComplete="email"
-                        className="sm:text-sm mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
+                        className=" mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
                       />
                     </div>
 
@@ -118,7 +118,7 @@ export const Register = () => {
                         name="email-address"
                         id="email-address"
                         autoComplete="email"
-                        className="sm:text-sm mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
+                        className=" mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
                       />
                     </div>
                   </div>
@@ -156,7 +156,7 @@ export const Register = () => {
               </p>
             </div>
           </div>
-          <div className="md:col-span-2 md:mt-0 mt-5">
+          <div className="mt-5 md:col-span-2 md:mt-0">
             <form action="#" method="POST">
               <div className="sm:rounded-md  overflow-hidden">
                 <div className="sm:p-6  space-y-6 px-4 py-5">

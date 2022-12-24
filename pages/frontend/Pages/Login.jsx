@@ -20,7 +20,7 @@ export const Login = () => {
                 to="/login"
               >
                 <span>Login</span>
-                <p className="mt-1 text-sm text-gray-600">
+                <p className="mt-1 text-gray-600">
                   Use a permanent address where you can receive mail.
                 </p>
               </NavLink>
@@ -33,7 +33,7 @@ export const Login = () => {
                 to="register"
               >
                 <span>Register</span>
-                <p className="mt-1 text-sm text-gray-600">
+                <p className="mt-1 text-gray-600">
                   if you don't have an account. Create your account now!
                 </p>
               </NavLink>

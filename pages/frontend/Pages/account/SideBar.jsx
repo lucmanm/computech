@@ -11,18 +11,18 @@ export const Account = () => {
 
   return (
     <>
-      <div className=" grid h-fit grid-cols-9 text-sm desktop:container">
+      <div className="grid h-fit grid-cols-9 desktop:container">
         {/*SideBar menus for account information */}
-        <div className="col-span-2 my-5 rounded-md border  bg-white shadow-md">
+        <div className="col-span-2 my-5 hidden rounded-md border bg-white shadow-md desktop:block">
           <div className="flex flex-col content-center items-center justify-center  p-2 text-center">
             <span className="text-blue-900">
               <CgProfile className="h-16 w-16 " />
             </span>
             <p className="text-lg font-bold">Your Name</p>
-            <p className="text-sm">
+            <p className="">
               <a href="mailto:youremail@domain.com">youremail@domain.com</a>
             </p>
-            <p className="text-sm">+966 56 261 7544</p>
+            <p className="">+966 56 261 7544</p>
           </div>
           {/* Loop of menus */}
           {feAccount.map(({ title, links }) => (
@@ -46,7 +46,7 @@ export const Account = () => {
             </div>
           ))}
         </div>
-        <div className="col-span-7 my-5 ml-2 rounded-md border  bg-white text-sm shadow-md">
+        <div className="col-span-9 my-5 ml-2 rounded-md bg-white shadow-md desktop:col-span-7">
           <Outlet />
         </div>
       </div>

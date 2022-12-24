@@ -8,7 +8,7 @@ export const WishList = () => {
           <div className="card-title">Wishlist</div>
           {/* Orders Listing */}
           <div className="flex flex-col rounded-md border border-blue-900 p-1">
-            <div className="flex items-center text-sm">
+            <div className="flex items-center">
               <div>
                 <img
                   src={aioimg}
