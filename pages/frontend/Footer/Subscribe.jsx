@@ -17,7 +17,7 @@ const Subscribe = () => {
                 type="text"
                 name="Subscribe"
                 id=""
-                className="input w-full rounded-full"
+                className="w-full rounded-full"
               />
             </span>
             <span>

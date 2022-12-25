@@ -5,7 +5,7 @@ export const CategoryIconNav = () => {
   return (
     <>
       <div className="group relative pt-8">
-        <div className="relative flex flex-col items-center text-base group-hover:text-blue-700">
+        <div className="relative flex flex-col items-center group-hover:text-blue-700">
           <span>{categoryIcon[0].icon}</span>
           <span className="cursor-pointer">Desktop</span>
           <div className="flex  min-w-full justify-center">
