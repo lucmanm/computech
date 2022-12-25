@@ -1,23 +1,29 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import aioimg from "../assets/img/aioimg.jpg";
-import { useLocation } from "react-router-dom";
 
 export const ProductPreview = () => {
-  const location = useLocation();
-  const { key } = location;
-  console.log(key);
-  // const { useId } = useParams();
-  // const [prod, setProd] = useState({});
-  // const apiUrl = `https://dummyjson.com/products/${params.useId}`;
+  const { prodId } = useParams();
+  const [prod, setProd] = useState({});
+  const apiUrl = `https://dummyjson.com/products/${prodId}`;
+  useEffect(() => {
+    fetch(apiUrl)
+      .then((res) => res.json())
+      .then((json) => setProd(json));
+  }, []);
+
   // const apiFitch = async () => {
   //   const response = await fetch(apiUrl);
   //   const responseData = await response.json();
-  //   setProd(responseData.products);
+  //   setProd(responseData);
   // };
 
   // useEffect(() => {
-  //   apiFitch();
+  //   apiFitch;
   // }, []);
+
+  const { id, description, brand, price } = prod;
+
   return (
     <>
       <div className="tw-typo-product mt-4 desktop:container">
@@ -27,26 +33,20 @@ export const ProductPreview = () => {
           </div>
           {/* Description */}
           <div className="order-1 line-clamp-3 desktop:order-2 desktop:col-span-4 desktop:h-24">
-            <h1>
-              {prod.title}
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae dolore perspiciatis deserunt, dolores temporibus iusto
-              distinctio et, quas sit maxime totam neque nam, vero consectetur
-              autem adipisci inventore ipsam voluptatum.
-            </h1>
+            <h1>{description}</h1>
           </div>
           {/* Brand price and Add to Cart */}
           <div className="order-3 prose-h1:text-base desktop:col-span-4">
             <div className="grid h-full grid-cols-1 content-end">
-              <div className="font-semibold">Brand: Lenovo</div>
-              <div className="text-3xl font-bold text-blue-900">sr 0,000</div>
+              <div className="font-semibold">Brand: {brand}</div>
+              <div className="text-3xl font-bold text-blue-900">sr {price}</div>
               <button className="btn btn-primary w-full">Add to Cart</button>
             </div>
           </div>
         </div>
         {/* Table Container */}
         <div className="mt-2 desktop:container">
-          <table class="table-auto">
+          <table className="table-auto">
             <thead>
               <tr>
                 <th className="w-1/4">Specification</th>
@@ -55,11 +55,11 @@ export const ProductPreview = () => {
             <tbody>
               <tr>
                 <td className="w-1/4">SKU</td>
-                <td>Lorem ipsum dolor, sit amet consecteturr</td>
+                <td>{id}</td>
               </tr>
               <tr>
                 <td className="w-1/4">Brand</td>
-                <td>Lorem ipsum dolor, sit amet consectetur</td>
+                <td>{brand}</td>
               </tr>
               <tr>
                 <td className="w-1/4">Model</td>
