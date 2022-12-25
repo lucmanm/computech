@@ -29,7 +29,7 @@ export const Header = () => {
             <div className="order-3 basis-6/12 p-1 desktop:order-2 desktop:basis-8/12">
               <div className="flex h-full items-center justify-center">
                 <input
-                  className="input w-full rounded-full"
+                  className="w-full rounded-full text-base"
                   type="text"
                   name="Search"
                   id=""

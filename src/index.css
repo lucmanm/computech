@@ -37,9 +37,9 @@
   }
 
   .tw-typo {
-    @apply prose prose-h1:m-0 prose-h1:text-base prose-h1:font-semibold prose-h1:line-clamp-2 prose-p:m-0 prose-p:text-2xl prose-p:font-semibold;
+    @apply prose prose-h1:m-0 prose-h1:text-base prose-h1:font-semibold prose-h1:line-clamp-2 prose-p:m-0 prose-p:text-2xl prose-p:font-bold;
   }
   .tw-typo-product {
-    @apply prose p-2 prose-h1:m-0 prose-h1:text-base prose-h1:font-semibold prose-table:m-0 prose-th:text-base prose-img:m-0 desktop:p-0 desktop:text-base desktop:prose-h1:text-lg;
+    @apply prose p-2 prose-h1:m-0 prose-h1:text-xl prose-h1:font-semibold prose-table:m-0 prose-th:text-base prose-img:m-0 desktop:p-0 desktop:prose-h1:text-3xl;
   }
 }

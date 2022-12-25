@@ -19,7 +19,7 @@ export const FooterInfo = () => {
             <img className="h-40 w-40" src={CompuTechLogoTrans} alt="" />
           </div>
           <div className="basis-4/6 md:basis-3/6">
-            <ul className="prose  leading-snug">
+            <ul className="prose leading-snug">
               <li>
                 <h3 className="m-0">Contact Us!</h3>
               </li>
@@ -34,8 +34,8 @@ export const FooterInfo = () => {
             </ul>
           </div>
           <div className="mt-4 flex basis-full flex-row flex-wrap text-center md:mt-0 md:basis-2/6 md:text-left">
-            <div className="basis-1/2">
-              <ul className="prose ">
+            <div className="prose basis-1/2">
+              <ul>
                 <li>
                   <h3 className="m-0">COMPANY</h3>
                 </li>
