@@ -94,7 +94,7 @@ export const Header = () => {
             <div className="order-last basis-2/12 p-1 desktop:order-6">
               <div className="flex h-full items-center justify-center">
                 <Link to="/cart">
-                  <button className="btn-icon btn-primary rounded-full desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
+                  <button className="btn-icon btn-primary rounded-full p-2  desktop:shadow-sm desktop:shadow-blue-900 desktop:active:shadow-none">
                     {cartIcon}
                   </button>
                 </Link>
