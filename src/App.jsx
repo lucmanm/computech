@@ -31,14 +31,17 @@ function App() {
     <div className="bg-gray-100">
       <Header />
       <SearchProducts />
+
       <Routes>
+        {pathname === "/" && <Route path="/" element={<Products />} />}
+        <Route path="/products">
+          <Route path=":prodId" element={<ProductPreview />} />
+        </Route>
         <Route path="/login" element={<Login />}>
           <Route index element={<CpLogin />} />
           <Route path="register" element={<CpRegister />} />
         </Route>
-        <Route path="/products">
-          <Route path=":prodId" element={<ProductPreview />} />
-        </Route>
+
         <Route path="cart" element={<Cart />} />
         <Route path="/account" element={<Account />}>
           <Route index element={<Profile />} />

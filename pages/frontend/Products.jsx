@@ -18,7 +18,7 @@ export const Products = () => {
   return (
     <div className="relative my-5 mx-2 grid h-fit grid-cols-2 justify-evenly gap-2 md:grid-cols-3 desktop:container desktop:grid-cols-5">
       {prod.slice(5, 10).map(({ id, description, price, images: [image1] }) => (
-        <Link key={id} to="/products/productpreview">
+        <Link key={id} to={`/products/${id}`}>
           <div>
             <div className="tw-typo group relative flex cursor-pointer flex-col gap-2 overflow-hidden rounded-md border border-blue-900 bg-white p-3 text-sm hover:border-blue-700 hover:shadow hover:shadow-gray-400 ">
               <div className="absolute z-10 rounded-md border border-blue-800  bg-white px-1 font-semibold">
