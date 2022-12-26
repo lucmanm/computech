@@ -28,17 +28,17 @@ export const ProductPreview = () => {
 
   return (
     <>
-      <div className="tw-typo-product mt-4 desktop:container">
-        <div className="grid grid-cols-1 gap-2 desktop:grid-cols-6">
-          <div className="order-2 desktop:order-1 desktop:col-span-2 desktop:row-span-2">
+      <div className="tw-typo-product mx-auto w-full max-w-full p-4 desktop:container">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-6">
+          <div className="order-2 md:order-1 md:col-span-2 md:row-span-2">
             <img src={aioimg} alt="All in one Image" />
           </div>
           {/* Description */}
-          <div className="order-1 line-clamp-3 desktop:order-2 desktop:col-span-4 desktop:h-24">
+          <div className="order-1 line-clamp-3 md:order-2 md:col-span-4 md:h-24">
             <h1>{description}</h1>
           </div>
           {/* Brand price and Add to Cart */}
-          <div className="order-3 prose-h1:text-base desktop:col-span-4">
+          <div className="order-3 prose-h1:text-base md:col-span-4">
             <div className="grid h-full grid-cols-1 content-end">
               <div className="font-semibold">Brand: {brand}</div>
               <div className="text-3xl font-bold text-blue-900">sr {price}</div>
@@ -47,7 +47,7 @@ export const ProductPreview = () => {
           </div>
         </div>
         {/* Table Container */}
-        <div className="mt-2 desktop:container">
+        <div className="mt-2 md:min-w-full">
           <table className="table-auto">
             <thead>
               <tr>
