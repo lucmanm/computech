@@ -7,7 +7,6 @@ import { Login as CpLogin } from "../pages/frontend/components/Login";
 import { Register as CpRegister } from "../pages/frontend/components/Register";
 import { Login } from "../pages/frontend/Pages/Login";
 import { Cart } from "../pages/frontend/Pages/Cart";
-
 import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
 import {
@@ -23,6 +22,8 @@ import { Brands } from "../pages/frontend/Components/Brands";
 import { ProductPreview } from "../pages/frontend/Pages/ProductPreview";
 import { SearchProducts } from "../pages/frontend/components/SearchProducts";
 import { PageNotFound } from "../pages/frontend/Pages/PageNotFound";
+import { SideBar } from "../pages/frontend/sidebar/SideBar";
+
 function App() {
   const location = useLocation();
   const { pathname } = location;
@@ -31,7 +32,7 @@ function App() {
     <div className="bg-gray-100">
       <Header />
       <SearchProducts />
-
+      <SideBar />
       <Routes>
         {pathname === "/" && <Route path="/" element={<Products />} />}
         <Route path="/products">
