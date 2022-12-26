@@ -1,14 +1,23 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { icons } from "./assets/data/data";
 export const Products = () => {
   const [prod, setProd] = useState([]);
   const apiUrl = "https://dummyjson.com/products";
+
   const apiFitch = async () => {
-    const response = await fetch(apiUrl);
-    const responseData = await response.json();
+    const response = await axios(apiUrl);
+    const responseData = await response.data;
     setProd(responseData.products);
   };
+
+  // const apiFitch = async () => {
+  //   const response = await fetch(apiUrl);
+  //   const responseData = await response.json();
+  //   setProd(responseData.products);
+  // };
+
   useEffect(() => {
     apiFitch();
   }, []);
