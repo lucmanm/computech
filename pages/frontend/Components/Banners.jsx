@@ -52,9 +52,6 @@ export const Banners = () => {
           <div className="aspect-h-square aspect-1 h-40 w-5/12 cursor-pointer snap-start snap-always bg-blue-900 desktop:h-52">
             <img src={Banner400x400} alt="" />
           </div>
-          <div className="aspect-h-square aspect-1 h-40 w-5/12 cursor-pointer snap-start snap-always bg-blue-900 desktop:h-52">
-            <img src={Banner400x400} alt="" />
-          </div>
         </div>
       </div>
     </>
