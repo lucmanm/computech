@@ -1,15 +1,7 @@
 import React from "react";
-import { Navigationbar } from "./Navigationbar";
-import { FrontSideNav } from "./FrontSideNav";
 import { Link } from "react-router-dom";
 import CompuTechLogo from "../assets/img/CompuTechLogo.png";
-
-import { HiMenu } from "react-icons/hi";
-import { BiDesktop, BiLaptop, BiPrinter } from "react-icons/bi";
-import { MdOutlineScanner } from "react-icons/md";
-import { GiServerRack } from "react-icons/gi";
-
-import { icons, mobIcons } from "../assets/data/data";
+import { icons } from "../assets/data/data";
 import { TopNavigation } from "./TopNavigation";
 export const Header = () => {
   const { languageIcon, personIcon, heartIcon, cartIcon } = icons;

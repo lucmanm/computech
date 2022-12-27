@@ -67,6 +67,9 @@ module.exports = {
       zIndex: {
         100: "100",
       },
+      height: {
+        '38': '9.5rem',
+      }
     },
   },
   plugins: [

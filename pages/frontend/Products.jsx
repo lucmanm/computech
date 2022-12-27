@@ -25,7 +25,7 @@ export const Products = () => {
   const { heartIcon, cartIcon, compare } = icons;
 
   return (
-    <div className="relative my-5 mx-2 grid h-fit grid-cols-2 justify-evenly gap-2 md:grid-cols-3 desktop:container desktop:grid-cols-5">
+    <div className="relative my-5 mx-2 grid h-fit grid-cols-2 justify-evenly gap-3 md:grid-cols-3 desktop:container desktop:grid-cols-5">
       {prod
         .slice(5, 10)
         .map(
