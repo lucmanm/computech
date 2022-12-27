@@ -52,8 +52,9 @@ function App() {
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      {pathname === "/" && <Brands />}
+
       {pathname === "/" && <Banners />}
+      {pathname === "/" && <Brands />}
       <Subscribe />
       <FooterInfo />
       <IconHzBar />
