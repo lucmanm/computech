@@ -12,21 +12,18 @@ const Subscribe = () => {
             <p>Get the latest deals, updates & more</p>
           </div>
           <div className="flex justify-center space-x-4">
-            <span>
-              <input
-                type="text"
-                name="Subscribe"
-                id=""
-                className="w-full rounded-full"
-              />
-            </span>
-            <span>
-              <input
-                className="btn btn-primary  rounded-full"
-                type="button"
-                value="Subscribe"
-              />
-            </span>
+            <form action="">
+              <span>
+                <input type="text" id="" className="w-full rounded-full" />
+              </span>
+              <span>
+                <input
+                  className="btn btn-primary  rounded-full"
+                  type="button"
+                  value="Subscribe"
+                />
+              </span>
+            </form>
           </div>
         </div>
       </div>

@@ -19,14 +19,14 @@ export const Header = () => {
               </div>
             </div>
             <div className="order-3 basis-6/12 p-1 desktop:order-2 desktop:basis-8/12">
-              <div className="flex h-full items-center justify-center">
-                <input
-                  className="w-full rounded-full text-base"
-                  type="text"
-                  name="Search"
-                  id=""
-                />
-              </div>
+              <form action="" method="post">
+                <div className="flex h-full items-center justify-center">
+                  <input
+                    className="w-full rounded-full text-base"
+                    type="text"
+                  />
+                </div>
+              </form>
             </div>
             <div className="hidden basis-2/12 p-1 desktop:order-3 desktop:block">
               <div className="flex h-full flex-col items-center justify-center">

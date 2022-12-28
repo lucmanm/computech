@@ -14,12 +14,6 @@ export const ProductPreview = () => {
     setProd(responseData);
   };
 
-  // const apiFitch = async () => {
-  //   const response = await fetch(apiUrl);
-  //   const responseData = await response.json();
-  //   setProd(responseData);
-  // };
-
   useEffect(() => {
     apiFitch();
   }, []);
