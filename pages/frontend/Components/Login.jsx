@@ -4,28 +4,29 @@ import { useState } from "react";
 
 import ComputechLogo from "../assets/img/ComputechLogo.png";
 export const Login = () => {
-  const [uName, setName] = useState("hbingley1");
-  const [uPass, setUpass] = useState("CQutx25i8r");
+  const [uName, setName] = useState("");
+  const [uPass, setUpass] = useState("");
 
   const apiUrl = "https://dummyjson.com/users";
-  let displayData;
-  const loginHandler = async () => {
-    // e.preventDefault();
+
+  const loginHandler = async (e) => {
+    e.preventDefault();
+    // atuny0;
+    // 9uQFF1Lh
     try {
       const apiResponse = await axios(apiUrl);
       const apiData = await apiResponse.data;
-      apiData.users.map(({ username, password }) => {
+      apiData.users.map(({ id, username, password }) => {
         if (username === uName && password === uPass) {
-          console.log("true");
+          localStorage.setItem("id", id);
+          localStorage.setItem("username", username);
+          localStorage.setItem("password", password);
         }
       });
-      // console.log(apiData);
     } catch (error) {
-      console.log("Error");
+      console.log("Something went wrong");
     }
   };
-
-  loginHandler();
 
   return (
     <>
@@ -45,18 +46,18 @@ export const Login = () => {
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
-                <label htmlFor="name-address" className="sr-only">
-                  Name
+                <label htmlFor="username" className="sr-only">
+                  Username
                 </label>
                 <input
-                  id="uName"
-                  name="uName"
+                  id="username"
+                  name="username"
                   type="text"
-                  autoComplete="uName"
+                  autoComplete="username"
                   value={uName}
                   onChange={(e) => setName(e.target.value)}
                   className=" relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-900"
-                  placeholder="Name"
+                  placeholder="Username"
                   required
                 />
               </div>
@@ -67,15 +68,18 @@ export const Login = () => {
                 <input
                   id="uPass"
                   name="uPass"
-                  type="uPass"
+                  type="password"
                   autoComplete="current-uPass"
                   value={uPass}
                   onChange={(e) => setUpass(e.target.value)}
                   className=" relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-900"
-                  placeholder="uPass"
+                  placeholder="Password"
                   required
                 />
               </div>
+            </div>
+            <div className="p-2 text-center">
+              Username: kdulyt | Password: 5t6q4KC7O
             </div>
             <div className="flex items-center justify-between">
               <div className="flex items-center">
