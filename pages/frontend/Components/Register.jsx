@@ -60,7 +60,8 @@ export const Register = () => {
                     <div className="sm:col-span-3 col-span-6">
                       <label
                         htmlFor="first-name"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         First name
                       </label>
                       <input
@@ -77,7 +78,8 @@ export const Register = () => {
                     <div className="sm:col-span-3 col-span-6">
                       <label
                         htmlFor="last-name"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Last name
                       </label>
                       <input
@@ -94,7 +96,8 @@ export const Register = () => {
                     <div className="sm:col-span-4 col-span-6">
                       <label
                         htmlFor="email-address"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Email address
                       </label>
                       <input
@@ -111,7 +114,8 @@ export const Register = () => {
                     <div className="sm:col-span-4 col-span-6">
                       <label
                         htmlFor="email-address"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Confirm Email address
                       </label>
                       <input
@@ -128,7 +132,8 @@ export const Register = () => {
                     <div className="sm:col-span-4 col-span-6">
                       <label
                         htmlFor="email-address"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Password
                       </label>
                       <input
@@ -145,7 +150,8 @@ export const Register = () => {
                     <div className="sm:col-span-4 col-span-6">
                       <label
                         htmlFor="email-address"
-                        className="block text-sm font-medium text-gray-700">
+                        className="block text-sm font-medium text-gray-700"
+                      >
                         Confirm Password
                       </label>
                       <input
@@ -157,10 +163,12 @@ export const Register = () => {
                         className=" mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-900 focus:ring-blue-900"
                       />
                     </div>
+
                     <div className="sm:px-6 bg-gray-50 px-4 py-3 text-right">
                       <button
                         type="submit"
-                        className="inline-flex justify-center rounded-md border border-transparent bg-blue-900 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        className="inline-flex justify-center rounded-md border border-transparent bg-blue-900 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                      >
                         Register
                       </button>
                     </div>

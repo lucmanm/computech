@@ -1,6 +1,32 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
+import { useState } from "react";
+
 import ComputechLogo from "../assets/img/ComputechLogo.png";
 export const Login = () => {
+  const [uName, setName] = useState("hbingley1");
+  const [uPass, setUpass] = useState("CQutx25i8r");
+
+  const apiUrl = "https://dummyjson.com/users";
+  let displayData;
+  const loginHandler = async () => {
+    // e.preventDefault();
+    try {
+      const apiResponse = await axios(apiUrl);
+      const apiData = await apiResponse.data;
+      apiData.users.map(({ username, password }) => {
+        if (username === uName && password === uPass) {
+          console.log("true");
+        }
+      });
+      // console.log(apiData);
+    } catch (error) {
+      console.log("Error");
+    }
+  };
+
+  loginHandler();
+
   return (
     <>
       <div className="sm:px-6 lg:px-8 flex min-h-full items-center justify-center py-12 px-4">
@@ -15,35 +41,39 @@ export const Login = () => {
               Log in to your account
             </h2>
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <form className="mt-8 space-y-6" onSubmit={loginHandler}>
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
-                <label htmlFor="email-address" className="sr-only">
-                  Email address
+                <label htmlFor="name-address" className="sr-only">
+                  Name
                 </label>
                 <input
-                  id="email-address"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
+                  id="uName"
+                  name="uName"
+                  type="text"
+                  autoComplete="uName"
+                  value={uName}
+                  onChange={(e) => setName(e.target.value)}
                   className=" relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-900"
-                  placeholder="Email address"
+                  placeholder="Name"
+                  required
                 />
               </div>
               <div>
-                <label htmlFor="password" className="sr-only">
-                  Password
+                <label htmlFor="uPass" className="sr-only">
+                  uPass
                 </label>
                 <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
-                  required
+                  id="uPass"
+                  name="uPass"
+                  type="uPass"
+                  autoComplete="current-uPass"
+                  value={uPass}
+                  onChange={(e) => setUpass(e.target.value)}
                   className=" relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-900"
-                  placeholder="Password"
+                  placeholder="uPass"
+                  required
                 />
               </div>
             </div>
