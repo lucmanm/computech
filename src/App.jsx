@@ -23,8 +23,10 @@ import { ProductPreview } from "../pages/frontend/Pages/ProductPreview";
 import { SearchProducts } from "../pages/frontend/components/SearchProducts";
 import { PageNotFound } from "../pages/frontend/Pages/PageNotFound";
 import { SideBar } from "../pages/frontend/sidebar/SideBar";
+import { useStateContext } from "../pages/frontend/contexts/ContextProvider";
 
 function App() {
+  const { loggedIn } = useStateContext;
   const location = useLocation();
   const { pathname } = location;
 
@@ -38,10 +40,12 @@ function App() {
         <Route path="/products">
           <Route path=":prodId" element={<ProductPreview />} />
         </Route>
-        <Route path="/login" element={<Login />}>
-          <Route index element={<CpLogin />} />
-          <Route path="register" element={<CpRegister />} />
-        </Route>
+        {!loggedIn && (
+          <Route path="/login" element={<Login />}>
+            <Route index element={<CpLogin />} />
+            <Route path="register" element={<CpRegister />} />
+          </Route>
+        )}
 
         <Route path="cart" element={<Cart />} />
         <Route path="/account" element={<Account />}>

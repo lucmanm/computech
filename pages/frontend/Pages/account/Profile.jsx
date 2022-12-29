@@ -3,7 +3,7 @@ import React from "react";
 export const Profile = () => {
   return (
     <>
-      <profile>
+      <section>
         <div className="flex flex-col justify-center p-4">
           <div className="card-title">Profile</div>
           <hr className="my-2" />
@@ -25,7 +25,7 @@ export const Profile = () => {
             <p>Password: *******</p>
           </div>
         </div>
-      </profile>
+      </section>
     </>
   );
 };

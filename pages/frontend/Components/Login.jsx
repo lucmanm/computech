@@ -1,12 +1,13 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import ComputechLogo from "../assets/img/ComputechLogo.png";
 export const Login = () => {
   const [uName, setName] = useState("");
   const [uPass, setUpass] = useState("");
-
+  const navigate = useNavigate();
   const apiUrl = "https://dummyjson.com/users";
 
   const loginHandler = async (e) => {
@@ -21,6 +22,7 @@ export const Login = () => {
           localStorage.setItem("id", id);
           localStorage.setItem("username", username);
           localStorage.setItem("password", password);
+          navigate("/account/");
         }
       });
     } catch (error) {
