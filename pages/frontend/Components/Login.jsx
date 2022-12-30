@@ -14,14 +14,15 @@ export const Login = () => {
     e.preventDefault();
     // atuny0;
     // 9uQFF1Lh
+
     try {
       const apiResponse = await axios(apiUrl);
       const apiData = await apiResponse.data;
       apiData.users.map(({ id, username, password }) => {
         if (username === uName && password === uPass) {
-          localStorage.setItem("id", id);
-          localStorage.setItem("username", username);
-          localStorage.setItem("password", password);
+          sessionStorage.setItem("id", id);
+          sessionStorage.setItem("username", username);
+          sessionStorage.setItem("password", password);
           navigate("/account/");
         }
       });
@@ -93,8 +94,7 @@ export const Login = () => {
                 />
                 <label
                   htmlFor="remember-me"
-                  className="ml-2 block text-gray-900"
-                >
+                  className="ml-2 block text-gray-900">
                   Remember me
                 </label>
               </div>
@@ -102,8 +102,7 @@ export const Login = () => {
               <div>
                 <a
                   href="#"
-                  className="font-medium text-blue-900 hover:text-blue-500"
-                >
+                  className="font-medium text-blue-900 hover:text-blue-500">
                   Forgot your password?
                 </a>
               </div>
@@ -112,8 +111,7 @@ export const Login = () => {
             <div>
               <button
                 type="submit"
-                className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue-900 py-2 px-4 font-medium text-white  hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2"
-              >
+                className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue-900 py-2 px-4 font-medium text-white  hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2">
                 LogIn
               </button>
             </div>
