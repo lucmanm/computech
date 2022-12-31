@@ -11,7 +11,6 @@ export const SideBarMenu = () => {
     "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md m-2 bg-blue-900 font-semibold";
   const normalLink =
     "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md text-gray-700  hover:bg-blue-900 hover:text-white m-2";
-
   return (
     <>
       {activeMenu && (
@@ -53,15 +52,15 @@ export const SideBarMenu = () => {
             <div>
               <Link
                 to="/"
-                className="mt-2 flex cursor-pointer items-center rounded py-2 px-4 hover:bg-blue-900 hover:text-white"
+                className="mt-2 flex cursor-pointer items-center space-x-6 rounded py-2 px-4 hover:bg-blue-900 hover:text-white"
+                onClick={() => {
+                  sessionStorage.clear();
+                }}
               >
-                <p
-                  onClick={() => {
-                    sessionStorage.clear();
-                  }}
-                >
-                  Logout
-                </p>
+                <div>
+                  <HiOutlineLogout />
+                </div>
+                <p>Logout</p>
               </Link>
             </div>
           </div>

@@ -9,12 +9,10 @@ export const AccountMenu = () => {
     "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md m-2 bg-blue-900 font-semibold";
   const normalLink =
     "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md text-gray-700  hover:bg-blue-900 hover:text-white m-2";
-
   return (
     <>
       {/* #LoggedInOnly */}
-
-      <div className="flex flex-col content-center items-center justify-center  p-2 text-center">
+      <div className="flex flex-col items-center justify-center p-2 text-center">
         <span className="text-blue-900">
           <CgProfile className="h-16 w-16 " />
         </span>

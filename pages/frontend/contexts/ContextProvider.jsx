@@ -10,7 +10,7 @@ export const ContextProvider = ({ children }) => {
     } else {
       setLoggedOut(true);
     }
-  }, [loggedIn, setLoggedOut]);
+  }, [login]);
 
   return (
     <StateContext.Provider

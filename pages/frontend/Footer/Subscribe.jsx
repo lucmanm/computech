@@ -5,7 +5,7 @@ const Subscribe = () => {
   return (
     <>
       <div className="bg-black">
-        <div className="dekstop:container flex flex-row flex-wrap items-center justify-center p-7">
+        <div className="dekstop:container flex flex-row flex-wrap items-center justify-center p-9">
           <div className="text-white">{icons.emailIcon}</div>
           <div className="p-x prose prose-invert px-7 prose-p:text-gray-200">
             <h2 className="m-0">Fear Of Missing Out?</h2>

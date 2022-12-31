@@ -12,8 +12,6 @@ export const Login = () => {
 
   const loginHandler = async (e) => {
     e.preventDefault();
-    // atuny0;
-    // 9uQFF1Lh
 
     try {
       const apiResponse = await axios(apiUrl);

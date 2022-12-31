@@ -4,7 +4,7 @@ import CompuTechLogo from "../assets/img/CompuTechLogo.png";
 import { icons } from "../assets/data/data";
 import { TopNavigation } from "./TopNavigation";
 export const Header = () => {
-  const { languageIcon, personIcon, heartIcon, cartIcon } = icons;
+  const { cartIcon } = icons;
   return (
     <>
       <div className="bg-white shadow-md">
@@ -48,17 +48,17 @@ export const Header = () => {
                 <ul className="text-md text-blac flex cursor-pointer flex-row flex-wrap text-center font-medium">
                   <li className="group py-2 px-2">
                     <div className="group-hover:rounded-t group-hover:bg-blue-900">
-                      <span className="border-b-4 border-gray-400 group-hover:border-blue-900 group-hover:text-white">
+                      <span className="border-b-4 border-gray-400 px-4 group-hover:border-b-blue-900 group-hover:text-white">
                         Brands
                       </span>
-                      <ul className="absolute hidden rounded border border-gray-200 bg-gray-100 text-left group-hover:block">
-                        <li className="h-8 w-40 border-b-2 px-2 pt-1 hover:bg-gray-200">
+                      <ul className="absolute mt-1 hidden rounded border-2 bg-blue-900 text-left text-white group-hover:block group-hover:border-blue-900">
+                        <li className="h-8 w-40 border-b-2 border-blue-900 px-2 pt-1 hover:bg-blue-700">
                           Dell
                         </li>
-                        <li className="h-8 w-40 border-b-2 px-2 pt-1 hover:bg-gray-200">
+                        <li className="h-8 w-40 border-b-2 border-blue-900 px-2 pt-1 hover:bg-blue-700">
                           Hp
                         </li>
-                        <li className="h-8 w-40 px-2 pt-1 hover:bg-gray-200">
+                        <li className="h-8 w-40 px-2 pt-1 hover:bg-blue-700">
                           Lenovo
                         </li>
                       </ul>
@@ -72,11 +72,6 @@ export const Header = () => {
                   <li className=" shrink-0 py-2 px-2">
                     <span className="border-b-4 border-gray-400 hover:border-blue-900 hover:text-blue-900">
                       Special Offers
-                    </span>
-                  </li>
-                  <li className="py-2 px-2">
-                    <span className="border-b-4 border-gray-400 hover:border-blue-900 hover:text-blue-900">
-                      Brands
                     </span>
                   </li>
                 </ul>
