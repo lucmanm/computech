@@ -2,10 +2,10 @@ import React from "react";
 import { AccountMenu } from "./accountMenu";
 import { useStateContext } from "../contexts/ContextProvider";
 import { menu } from "./../assets/data/data";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HiOutlineLogout } from "react-icons/hi";
 export const SideBarMenu = () => {
-  const { activeMenu, setActiveMenu } = useStateContext();
+  const { loggedIn, activeMenu, setActiveMenu } = useStateContext();
 
   const activeLink =
     "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md m-2 bg-blue-900 font-semibold";
@@ -21,9 +21,12 @@ export const SideBarMenu = () => {
               Menu
             </div>
           </div>
-          <div>
-            <AccountMenu />
-          </div>
+          {loggedIn && (
+            // #LoggedInOnly
+            <div>
+              <AccountMenu />
+            </div>
+          )}
           <div className="flex flex-col">
             <div>
               <div>
@@ -48,9 +51,18 @@ export const SideBarMenu = () => {
               </div>
             </div>
             <div>
-              <div className="mt-2 flex cursor-pointer items-center rounded py-2 px-4 hover:bg-blue-900 hover:text-white">
-                <p>Logout</p>
-              </div>
+              <Link
+                to="/"
+                className="mt-2 flex cursor-pointer items-center rounded py-2 px-4 hover:bg-blue-900 hover:text-white"
+              >
+                <p
+                  onClick={() => {
+                    sessionStorage.clear();
+                  }}
+                >
+                  Logout
+                </p>
+              </Link>
             </div>
           </div>
         </div>

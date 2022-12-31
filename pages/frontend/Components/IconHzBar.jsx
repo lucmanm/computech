@@ -36,15 +36,6 @@ export const IconHzBar = () => {
         </NavLink>
         <NavLink
           className="btn-icon btn-primary grow py-3"
-          onClick={() =>
-            activeMenu ? setActiveMenu((prevActiveMenu) => !prevActiveMenu) : ""
-          }
-          to="/login"
-        >
-          <div className="mx-auto w-fit">{personIc}</div>
-        </NavLink>
-        <NavLink
-          className="btn-icon btn-primary grow py-3"
           onClick={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
           to="#"
         >

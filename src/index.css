@@ -28,7 +28,7 @@
   }
 
   .btn {
-    @apply cursor-pointer justify-center rounded-md py-3 px-3 font-medium;
+    @apply text-sm cursor-pointer justify-center rounded-md py-3 px-3 font-medium;
   }
 
   .btn-icon {

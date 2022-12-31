@@ -34,8 +34,8 @@ export const FooterInfo = () => {
             </ul>
           </div>
           <div className="mt-4 flex basis-full flex-row flex-wrap text-center md:mt-0 md:basis-2/6 md:text-left">
-            <div className="prose basis-1/2">
-              <ul>
+            <div className="basis-1/2">
+              <ul className="prose prose-li:leading-snug">
                 <li>
                   <h3 className="m-0">COMPANY</h3>
                 </li>
@@ -47,7 +47,7 @@ export const FooterInfo = () => {
               </ul>
             </div>
             <div className="basis-1/2">
-              <ul className="prose ">
+              <ul className="prose prose-li:leading-snug">
                 <li>
                   <h3 className="m-0">HELP</h3>
                 </li>
