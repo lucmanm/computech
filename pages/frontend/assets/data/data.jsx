@@ -17,8 +17,9 @@ import {
 } from "react-icons/hi";
 import { CiDesktop } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
-import { MdCompare } from "react-icons/md";
+import { MdCompare, MdLocationPin } from "react-icons/md";
 import { AiOutlineDelete } from "react-icons/ai";
+import { TiContacts } from "react-icons/ti";
 import aioimg from "../img/aioimg.jpg";
 export const icons = {
   personIcon: <BsPerson size={24} />,
@@ -92,7 +93,7 @@ export const categoryIcon = [
   },
 ];
 
-export const feAccount = [
+export const accountMenuTitles = [
   {
     title: "My Account Information",
     links: [
@@ -131,7 +132,28 @@ export const feAccount = [
     ],
   },
 ];
-
+export const menu = [
+  {
+    name: "Login or Register",
+    path: "/login",
+    icon: <CgProfile />,
+  },
+  {
+    name: "WishList",
+    path: "/wishlisht",
+    icon: <BsHeart />,
+  },
+  {
+    name: "Contacts Us",
+    path: "/contactus",
+    icon: <TiContacts />,
+  },
+  {
+    name: "Location",
+    path: "/location",
+    icon: <MdLocationPin />,
+  },
+];
 // export const links = [
 //   {
 //     title: "Dashboard",

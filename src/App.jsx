@@ -11,7 +11,7 @@ import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
 import {
   Profile,
-  Account,
+  DtAccMenu,
   Address,
   Orders,
   WishList,
@@ -22,7 +22,7 @@ import { Brands } from "../pages/frontend/components/Brands";
 import { ProductPreview } from "../pages/frontend/Pages/ProductPreview";
 import { SearchProducts } from "../pages/frontend/components/SearchProducts";
 import { PageNotFound } from "../pages/frontend/Pages/PageNotFound";
-import { SideBar } from "../pages/frontend/sidebar/SideBar";
+import { SideBarMenu } from "../pages/frontend/sidebar/SideBarMenu";
 import { useStateContext } from "../pages/frontend/contexts/ContextProvider";
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
     <div className="bg-gray-100">
       <Header />
       <SearchProducts />
-      <SideBar />
+      <SideBarMenu />
       <Routes>
         {pathname === "/" && <Route path="/" element={<Products />} />}
         <Route path="/products">
@@ -48,7 +48,7 @@ function App() {
         )}
 
         <Route path="cart" element={<Cart />} />
-        <Route path="/account" element={<Account />}>
+        <Route path="/account" element={<DtAccMenu />}>
           <Route index element={<Profile />} />
           <Route path="address" element={<Address />} />
           <Route path="orders" element={<Orders />} />

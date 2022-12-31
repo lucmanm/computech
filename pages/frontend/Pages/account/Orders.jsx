@@ -3,7 +3,7 @@ import aioimg from "../../assets/img/aioimg.jpg";
 export const Orders = () => {
   return (
     <>
-      <orders>
+      <div>
         <div className="flex flex-col justify-center p-4">
           <div className="card-title">Orders</div>
           {/* Orders Listing */}
@@ -27,7 +27,7 @@ export const Orders = () => {
             </div>
           </div>
         </div>
-      </orders>
+      </div>
     </>
   );
 };

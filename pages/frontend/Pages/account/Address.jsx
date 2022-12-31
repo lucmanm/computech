@@ -3,7 +3,7 @@ import React from "react";
 export const Address = () => {
   return (
     <>
-      <myaddress>
+      <div>
         <div className="ital flex flex-col justify-center p-4">
           <div className="card-title">Address</div>
           <hr className="my-2" />
@@ -17,7 +17,7 @@ export const Address = () => {
             </p>
           </div>
         </div>
-      </myaddress>
+      </div>
     </>
   );
 };
