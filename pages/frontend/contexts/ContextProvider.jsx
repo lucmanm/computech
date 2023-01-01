@@ -3,10 +3,12 @@ const StateContext = createContext();
 export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
-  const login = sessionStorage.getItem("auth");
+  const loginAuth = localStorage.getItem("auth");
   useEffect(() => {
-    if (login === null) {
-      sessionStorage.clear();
+    if (loginAuth === null) {
+      localStorage.clear();
+    } else {
+      loginAuth === "auth";
     }
   }, []);
 
@@ -17,8 +19,8 @@ export const ContextProvider = ({ children }) => {
         setActiveMenu,
         loggedIn,
         setLoggedIn,
-      }}
-    >
+        loginAuth,
+      }}>
       {children}
     </StateContext.Provider>
   );

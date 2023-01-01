@@ -3,10 +3,10 @@ import { Outlet } from "react-router-dom";
 import { AccountMenu } from "../../sidebar/accountMenu";
 import { useStateContext } from "../../contexts/ContextProvider";
 export const DtAccMenu = () => {
-  const { loggedIn } = useStateContext();
+  const { loginAuth } = useStateContext();
   return (
     <>
-      {loggedIn && (
+      {loginAuth && (
         // #LoggedInOnly
         <div className="my-5 mx-2 grid h-fit grid-cols-9 gap-2 desktop:container">
           {/*SideBar menus for account information desktop*/}

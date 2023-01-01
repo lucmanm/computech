@@ -5,7 +5,7 @@ import { menu } from "./../assets/data/data";
 import { Link, NavLink } from "react-router-dom";
 import { HiOutlineLogout } from "react-icons/hi";
 export const SideBarMenu = () => {
-  const { loggedIn, activeMenu, setActiveMenu } = useStateContext();
+  const { loginAuth, activeMenu, setActiveMenu } = useStateContext();
 
   const activeLink =
     "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md m-2 bg-blue-900 font-semibold";
@@ -20,7 +20,7 @@ export const SideBarMenu = () => {
               Menu
             </div>
           </div>
-          {loggedIn && (
+          {loginAuth && (
             // #LoggedInOnly
             <div>
               <AccountMenu />
@@ -41,8 +41,7 @@ export const SideBarMenu = () => {
                       activeMenu
                         ? setActiveMenu((prevActiveMenu) => !prevActiveMenu)
                         : ""
-                    }
-                  >
+                    }>
                     {icon}
                     <span className="capatilize">{name}</span>
                   </NavLink>
@@ -54,9 +53,8 @@ export const SideBarMenu = () => {
                 to="/"
                 className="mt-2 flex cursor-pointer items-center space-x-6 rounded py-2 px-4 hover:bg-blue-900 hover:text-white"
                 onClick={() => {
-                  sessionStorage.clear();
-                }}
-              >
+                  localStorage.clear();
+                }}>
                 <div>
                   <HiOutlineLogout />
                 </div>
