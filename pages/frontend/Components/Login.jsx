@@ -2,9 +2,10 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import ComputechLogo from "../assets/img/ComputechLogo.png";
+import { useStateContext } from "../contexts/ContextProvider";
 export const Login = () => {
+  const { setLoggedIn } = useStateContext();
   const [uName, setName] = useState("");
   const [uPass, setUpass] = useState("");
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ export const Login = () => {
       apiData.users.map(({ id, username, password }) => {
         if (username === uName && password === uPass) {
           sessionStorage.setItem("auth", "authorized");
+          setLoggedIn(true);
           navigate("/account/");
         }
       });
