@@ -154,6 +154,50 @@ export const menu = [
     icon: <MdLocationPin />,
   },
 ];
+export const categiries = [
+  {
+    title: "Categories",
+    catogryNane: [
+      {
+        name: "Login or Register",
+        path: "/login",
+      },
+      {
+        name: "Login or Register",
+        path: "/login",
+      },
+    ],
+  },
+];
+
+export const brand = [
+  {
+    title: "Brand",
+    brandName: [
+      {
+        name: "Dell",
+        path: "#",
+      },
+      {
+        name: "Hp",
+        path: "#",
+      },
+      {
+        name: "Lenovo",
+        path: "#",
+      },
+      {
+        name: "Microsfot",
+        path: "#",
+      },
+      {
+        name: "Dummy",
+        path: "#",
+      },
+    ],
+  },
+];
+
 // export const links = [
 //   {
 //     title: "Dashboard",
