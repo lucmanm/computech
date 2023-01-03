@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import CompuTechLogo from "../assets/img/CompuTechLogo.png";
 import { icons } from "../assets/data/data";
 import { TopNavigation } from "./TopNavigation";
+import { MainMenu } from "../components/MainMenu";
 export const Header = () => {
   const { cartIcon } = icons;
   return (
@@ -39,7 +40,7 @@ export const Header = () => {
             {/* Dropdown Navigation & Sidebar */}
             <div className="order-first basis-2/12 p-1 desktop:order-4">
               <div className="flex h-full items-center justify-center">
-                Menu
+                <MainMenu />
               </div>
             </div>
             {/* Navigation Menus */}

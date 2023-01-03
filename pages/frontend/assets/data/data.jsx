@@ -154,17 +154,37 @@ export const menu = [
     icon: <MdLocationPin />,
   },
 ];
-export const categiries = [
+export const mainMenuCategories = [
   {
-    title: "Categories",
-    catogryNane: [
+    title: "All Categories",
+    categoryName: [
       {
-        name: "Login or Register",
-        path: "/login",
+        name: "Computers",
+        path: "/",
       },
       {
-        name: "Login or Register",
-        path: "/login",
+        name: "Laptop",
+        path: "/",
+      },
+      {
+        name: "Monitors",
+        path: "/",
+      },
+      {
+        name: "Printers",
+        path: "/",
+      },
+      {
+        name: "Servers",
+        path: "/",
+      },
+      {
+        name: "Scanners",
+        path: "/",
+      },
+      {
+        name: "Card Printer",
+        path: "/",
       },
     ],
   },
