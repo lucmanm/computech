@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CompuTechLogo from "../assets/img/CompuTechLogo.png";
 import { icons } from "../assets/data/data";
 import { TopNavigation } from "./TopNavigation";
-import { MainMenu } from "../components/MainMenu";
+import { MainMenu } from "./../menu/MainMenu";
 export const Header = () => {
   const { cartIcon } = icons;
   return (

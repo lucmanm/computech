@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { AccountMenu } from "../../sidebar/accountMenu";
+import { AccountMenu } from "../../menu/accountMenu";
 import { useStateContext } from "../../contexts/ContextProvider";
 export const DtAccMenu = () => {
   const { loginAuth } = useStateContext();

@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   input[type="color"],
   input[type="date"],
   input[type="datetime"],
@@ -20,7 +20,7 @@
   textarea {
     @apply text-base;
   }
-}
+} */
 
 @layer components {
   html {

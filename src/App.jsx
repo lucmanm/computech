@@ -22,7 +22,7 @@ import { Brands } from "../pages/frontend/components/Brands";
 import { ProductPreview } from "../pages/frontend/Pages/ProductPreview";
 import { SearchProducts } from "../pages/frontend/components/SearchProducts";
 import { PageNotFound } from "../pages/frontend/Pages/PageNotFound";
-import { SideBarMenu } from "../pages/frontend/sidebar/SideBarMenu";
+import { SideBarMenu } from "../pages/frontend/menu/SideBarMenu";
 import { useStateContext } from "../pages/frontend/contexts/ContextProvider";
 
 function App() {

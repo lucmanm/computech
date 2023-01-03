@@ -154,6 +154,7 @@ export const menu = [
     icon: <MdLocationPin />,
   },
 ];
+
 export const mainMenuCategories = [
   {
     title: "All Categories",
