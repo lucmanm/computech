@@ -5,7 +5,7 @@ export const PageNotFound = () => {
   const navigate = useNavigate();
 
   setTimeout(() => {
-    navigate(-1);
+    navigate("/");
   }, 1000);
 
   return (
