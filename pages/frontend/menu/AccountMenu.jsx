@@ -4,7 +4,7 @@ import { accountMenuTitles } from "../assets/data/data";
 import { NavLink } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 export const AccountMenu = () => {
-  const { activeMenu, setActiveMenu } = useStateContext();
+  const { sideMenuR, setSideMenuR } = useStateContext();
   const activeLink =
     "flex items-center gap-5 pl-4 pt-2 pb-2 rounded-md text-white text-md m-2 bg-blue-900 font-semibold";
   const normalLink =
@@ -33,9 +33,8 @@ export const AccountMenu = () => {
               key={pathdir}
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
               onClick={() =>
-                activeMenu && setActiveMenu((prevActiveMenu) => !prevActiveMenu)
-              }
-            >
+                sideMenuR && setSideMenuR((prevActiveMenu) => !prevActiveMenu)
+              }>
               {icon}
               <span className="capatilize">{name}</span>
             </NavLink>

@@ -157,7 +157,7 @@ export const menu = [
 
 export const mainMenuCategories = [
   {
-    title: "All Categories",
+    title: "ALL CATEGORIES",
     categoryName: [
       {
         name: "Computers",

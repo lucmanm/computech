@@ -1,7 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const PageNotFound = () => {
+  const navigate = useNavigate();
+
+  setTimeout(() => {
+    navigate(-1);
+  }, 1000);
+
   return (
     <>
       <div className="desktop:container">

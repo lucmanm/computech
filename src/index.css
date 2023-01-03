@@ -26,9 +26,9 @@
   html {
     @apply font-monts text-xs leading-normal selection:bg-blue-700 selection:text-white desktop:text-sm;
   }
-
+  /* Buttons */
   .btn {
-    @apply text-sm cursor-pointer justify-center rounded-md py-3 px-3 font-medium;
+    @apply cursor-pointer justify-center rounded-md py-3 px-3 text-sm font-medium;
   }
 
   .btn-icon {
@@ -40,6 +40,13 @@
   }
   .btn-danger {
     @apply bg-red-700 text-white hover:bg-red-900;
+  }
+  /* Navigations & Menu */
+  .md-btn-nav-container {
+    @apply flex w-full flex-col overflow-hidden;
+  }
+  .md-btn-nav {
+    @apply w-full border-b border-b-gray-300 bg-gray-200 px-4 py-3 font-medium text-gray-600 hover:bg-blue-700 hover:text-white;
   }
 
   /* .input {

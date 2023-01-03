@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 const StateContext = createContext();
 export const ContextProvider = ({ children }) => {
-  const [activeMenu, setActiveMenu] = useState(false);
+  const [sideMenuR, setSideMenuR] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
   const loginAuth = localStorage.getItem("auth");
   useEffect(() => {
@@ -15,8 +15,8 @@ export const ContextProvider = ({ children }) => {
   return (
     <StateContext.Provider
       value={{
-        activeMenu,
-        setActiveMenu,
+        sideMenuR,
+        setSideMenuR,
         loggedIn,
         setLoggedIn,
         loginAuth,
