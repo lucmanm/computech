@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../pages/frontend/header";
+import { Header } from "../pages/frontend/Header";
 import { Products } from "../pages/frontend/";
 import { FooterInfo } from "../pages/frontend/footer/FooterInfo";
 import Subscribe from "../pages/frontend/footer/Subscribe";
@@ -24,6 +24,7 @@ import { SearchProducts } from "../pages/frontend/components/SearchProducts";
 import { PageNotFound } from "../pages/frontend/Pages/PageNotFound";
 import { SideBarMenu } from "../pages/frontend/menu/SideBarMenu";
 import { useStateContext } from "../pages/frontend/contexts/ContextProvider";
+import { LsideBarMenu } from "../pages/frontend/menu/LsideBarMenu";
 
 function App() {
   const { loggedIn } = useStateContext;
@@ -34,6 +35,7 @@ function App() {
     <div className="bg-gray-100">
       <Header />
       <SearchProducts />
+      <LsideBarMenu />
       <SideBarMenu />
       <Routes>
         {pathname === "/" && <Route path="/" element={<Products />} />}

@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CompuTechLogo from "../assets/img/CompuTechLogo.png";
 import { icons } from "../assets/data/data";
 import { TopNavigation } from "./TopNavigation";
 import { MainMenu } from "./../menu/MainMenu";
+import { useStateContext } from "../contexts/ContextProvider";
+
 export const Header = () => {
+  const { setLeftSideBar } = useStateContext();
   const { cartIcon } = icons;
+
   return (
     <>
       <div className="bg-white shadow-md">
@@ -41,6 +45,10 @@ export const Header = () => {
             <div className="order-first basis-2/12 p-1 desktop:order-4">
               <div className="flex h-full items-center justify-center">
                 <MainMenu />
+                <button
+                  className="right-0 z-900 mt-2 mr-2 h-10 w-10 cursor-pointer rounded-full bg-red-900 hover:bg-red-700"
+                  onClick={() => setLeftSideBar(true)}
+                />
               </div>
             </div>
             {/* Navigation Menus */}

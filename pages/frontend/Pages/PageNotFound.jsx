@@ -3,10 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const PageNotFound = () => {
   const navigate = useNavigate();
-
-  setTimeout(() => {
-    navigate("/");
-  }, 1000);
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/");
+    }, 1000);
+  }, []);
 
   return (
     <>
