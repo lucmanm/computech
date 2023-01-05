@@ -5,7 +5,7 @@ export const MainMenu = () => {
   return (
     <>
       {/* Desktop Category Menu */}
-      <div className="group relative z-100 hidden w-full desktop:block">
+      <div className="group relative z-1000 hidden w-full desktop:block">
         {mainMenuCategories.map(({ title, categoryName }) => (
           <div key={title}>
             <div className="grow cursor-default rounded bg-blue-900 py-3 text-center font-bold uppercase text-white">
