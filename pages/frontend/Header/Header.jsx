@@ -1,14 +1,14 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import CompuTechLogo from "../assets/img/CompuTechLogo.png";
-import { icons } from "../assets/data/data";
+import { defaultIcon } from "../assets/data/data";
 import { TopNavigation } from "./TopNavigation";
 import { MainMenu } from "./../menu/MainMenu";
 import { useStateContext } from "../contexts/ContextProvider";
 
 export const Header = () => {
   const { setLeftSideBar } = useStateContext();
-  const { cartIcon } = icons;
+  const { cartIcon, menuIc } = defaultIcon;
 
   return (
     <>
@@ -46,9 +46,11 @@ export const Header = () => {
               <div className="flex h-full items-center justify-center">
                 <MainMenu />
                 <button
-                  className="right-0 z-900 mt-2 mr-2 h-10 w-10 cursor-pointer rounded-full bg-red-900 hover:bg-red-700"
+                  className="right-0 z-900 cursor-pointer text-blue-900 focus:text-blue-700 desktop:hidden"
                   onClick={() => setLeftSideBar(true)}
-                />
+                >
+                  {menuIc}
+                </button>
               </div>
             </div>
             {/* Navigation Menus */}

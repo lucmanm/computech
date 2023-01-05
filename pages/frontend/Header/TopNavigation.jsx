@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { icons, langauge } from "../assets/data/data";
+import { defaultIcon, langauge } from "../assets/data/data";
 import { useStateContext } from "../contexts/ContextProvider";
 export const TopNavigation = () => {
   const { loginAuth, setLoggedIn } = useStateContext();
-  const { languageIcon, personIcon, heartIcon } = icons;
+  const { languageIcon, personIcon, heartIcon } = defaultIcon;
 
   return (
     <>
@@ -15,21 +15,24 @@ export const TopNavigation = () => {
             {loginAuth ? (
               <Link
                 className="flex flex-row flex-wrap items-center gap-2 border-r-2 px-2  hover:text-blue-700"
-                to="/account/">
+                to="/account/"
+              >
                 <span>{personIcon}</span>
                 <p>My Account</p>
               </Link>
             ) : (
               <Link
                 className="flex flex-row flex-wrap items-center gap-2 border-r-2 px-2  hover:text-blue-700"
-                to="/login">
+                to="/login"
+              >
                 <span>{personIcon}</span>
                 <p>Login/Register</p>
               </Link>
             )}
             <Link
               className="flex flex-row flex-wrap items-center gap-2 px-2  hover:text-blue-700"
-              to="/account/Wishlist">
+              to="/account/Wishlist"
+            >
               {heartIcon}
               <p>WishList</p>
             </Link>

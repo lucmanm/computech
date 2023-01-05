@@ -4,7 +4,8 @@ import { mobIcons } from "../assets/data/data";
 import { useStateContext } from "../contexts/ContextProvider";
 
 export const IconHzBar = () => {
-  const { sideMenuR, setSideMenuR } = useStateContext();
+  const { sideMenuR, setSideMenuR, leftSideBar, setLeftSideBar } =
+    useStateContext();
 
   const { homeIc, personIc, shopIc, searchIc, menuIc } = mobIcons;
   return (
@@ -13,14 +14,20 @@ export const IconHzBar = () => {
         <NavLink
           className="btn-icon btn-primary grow py-3"
           onClick={() =>
-            sideMenuR ? setSideMenuR((prevActiveMenu) => !prevActiveMenu) : ""
+            sideMenuR
+              ? setSideMenuR((prevActiveMenu) => !prevActiveMenu)
+              : "" | leftSideBar
+              ? setLeftSideBar((prevActiveMenu) => !prevActiveMenu)
+              : ""
           }
-          to="/">
+          to="/"
+        >
           <div className="mx-auto w-fit">{homeIc}</div>
         </NavLink>
         <NavLink
           className="btn-icon btn-primary grow py-3"
-          to="/searchproducts">
+          to="/searchproducts"
+        >
           <div className="mx-auto w-fit">{searchIc}</div>
         </NavLink>
         <NavLink
@@ -28,13 +35,15 @@ export const IconHzBar = () => {
           onClick={() =>
             sideMenuR ? setSideMenuR((prevActiveMenu) => !prevActiveMenu) : ""
           }
-          to="/cart">
+          to="/cart"
+        >
           <div className="mx-auto w-fit">{shopIc}</div>
         </NavLink>
         <NavLink
           className="btn-icon btn-primary grow py-3"
           onClick={() => setSideMenuR((prevActiveMenu) => !prevActiveMenu)}
-          to="#">
+          to="#"
+        >
           <div className="mx-auto w-fit">{menuIc}</div>
         </NavLink>
       </div>

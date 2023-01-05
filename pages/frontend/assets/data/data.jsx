@@ -8,6 +8,7 @@ import {
   BsTruck,
 } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
+import { IoIosCloseCircle } from "react-icons/io";
 import {
   HiOutlineMailOpen,
   HiOutlineHome,
@@ -15,13 +16,15 @@ import {
   HiOutlineSearch,
   HiMenu,
 } from "react-icons/hi";
+
 import { CiDesktop } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { MdCompare, MdLocationPin } from "react-icons/md";
 import { AiOutlineDelete } from "react-icons/ai";
 import { TiContacts } from "react-icons/ti";
 import aioimg from "../img/aioimg.jpg";
-export const icons = {
+
+export const defaultIcon = {
   personIcon: <BsPerson size={24} />,
   heartIcon: <BsHeart size={24} />,
   cartIcon: <BsCart2 size={24} />,
@@ -29,6 +32,8 @@ export const icons = {
   emailIcon: <HiOutlineMailOpen size={24} />,
   compare: <MdCompare size={24} />,
   deleteIcon: <AiOutlineDelete size={24} />,
+  menuIc: <HiMenu className="h-10 w-10" />,
+  closeIcon: <IoIosCloseCircle size={28} />,
 };
 
 export const mobIcons = {

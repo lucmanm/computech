@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { mainMenuCategories } from "../assets/data/data";
 export const MainMenu = () => {
@@ -17,7 +17,8 @@ export const MainMenu = () => {
                   <Link
                     key={name}
                     to={path}
-                    className="w-full border border-b-gray-300 bg-gray-200 px-2 py-3 font-medium text-gray-600 hover:bg-gray-100 hover:text-black">
+                    className="w-full border border-b-gray-300 bg-gray-200 px-2 py-3 font-medium text-gray-600 hover:bg-gray-100 hover:text-black"
+                  >
                     {name}
                   </Link>
                 ))}

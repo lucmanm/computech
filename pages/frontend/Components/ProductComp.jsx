@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import aioimg from "./assets/img/aioimg.jpg";
-import { icons } from "./assets/data/data";
+import { defaultIcon } from "./assets/data/data";
 export const ProductComp = () => {
   const [data, setData] = useState([]);
   const apiUrl = "https://dummyjson.com/products";
@@ -31,7 +31,7 @@ export const ProductComp = () => {
           {/* Wishlist, Compare, QuickView */}
           {/* <div className=" absolute top-7 right-7 flex flex-col items-end space-y-1">
           <button className="invisible relative flex h-11  w-11 flex-row-reverse items-center overflow-hidden truncate rounded-md bg-blue-900 py-1 text-white opacity-0  duration-300 hover:w-32 hover:duration-500 group-hover:visible group-hover:opacity-100 group-hover:duration-300">
-          <span className="pr-2">{icons.heartIcon}</span>
+          <span className="pr-2">{defaultIcon.heartIcon}</span>
           <span className="mx-1 inline-block px-1 text-base font-semibold">
           Wish List
           </span>
@@ -46,7 +46,7 @@ export const ProductComp = () => {
           </h4>
           <span className="block text-lg font-bold">$ 600.00</span>
           <button className="container flex max-w-full justify-between rounded-md bg-blue-900 p-2 text-white hover:bg-blue-700">
-          <span>{icons.cartIcon}</span>
+          <span>{defaultIcon.cartIcon}</span>
           <span className=" pr-3">Add to cart</span>
           </button>
         </div> */}

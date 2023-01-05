@@ -4,9 +4,10 @@ const StateContext = createContext();
 export const ContextProvider = ({ children }) => {
   const [sideMenuR, setSideMenuR] = useState(false);
   const [leftSideBar, setLeftSideBar] = useState(false);
+  const [screenSize, setScreenSize] = useState(undefined);
   const [loggedIn, setLoggedIn] = useState(false);
   const loginAuth = localStorage.getItem("auth");
-  console.log(leftSideBar);
+
   useEffect(() => {
     if (loginAuth === null) {
       localStorage.clear();
@@ -22,10 +23,13 @@ export const ContextProvider = ({ children }) => {
         setSideMenuR,
         leftSideBar,
         setLeftSideBar,
+        screenSize,
+        setScreenSize,
         loggedIn,
         setLoggedIn,
         loginAuth,
-      }}>
+      }}
+    >
       {children}
     </StateContext.Provider>
   );

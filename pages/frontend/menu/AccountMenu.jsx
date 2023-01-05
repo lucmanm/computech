@@ -34,7 +34,8 @@ export const AccountMenu = () => {
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
               onClick={() =>
                 sideMenuR && setSideMenuR((prevActiveMenu) => !prevActiveMenu)
-              }>
+              }
+            >
               {icon}
               <span className="capatilize">{name}</span>
             </NavLink>

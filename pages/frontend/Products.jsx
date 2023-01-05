@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { icons } from "./assets/data/data";
+import { defaultIcon } from "./assets/data/data";
 export const Products = () => {
   const [prod, setProd] = useState([]);
   const apiUrl = "https://dummyjson.com/products";
@@ -22,7 +22,7 @@ export const Products = () => {
     apiFitch();
   }, []);
 
-  const { heartIcon, cartIcon, compare } = icons;
+  const { heartIcon, cartIcon, compare } = defaultIcon;
 
   return (
     <div className="relative my-5 mx-2 grid h-fit grid-cols-2 justify-evenly gap-3 md:grid-cols-3 desktop:container desktop:grid-cols-5">

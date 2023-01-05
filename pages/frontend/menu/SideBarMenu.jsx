@@ -3,7 +3,7 @@ import { AccountMenu } from "./accountMenu";
 import { useStateContext } from "../contexts/ContextProvider";
 import { menu } from "./../assets/data/data";
 import { Link, NavLink } from "react-router-dom";
-import { mainMenuCategories } from "../assets/data/data";
+import { MobileMainMenu } from "./../menu/MobileMainMenu";
 export const SideBarMenu = () => {
   const { loginAuth, sideMenuR, setSideMenuR } = useStateContext();
 
@@ -36,37 +36,14 @@ export const SideBarMenu = () => {
                     sideMenuR
                       ? setSideMenuR((prevActiveMenu) => !prevActiveMenu)
                       : ""
-                  }>
+                  }
+                >
                   <span className="capatilize">{name}</span>
                 </NavLink>
               ))}
             </div>
             {/* Product Category Menu */}
-            <div className="">
-              {mainMenuCategories.map(({ title, categoryName }) => (
-                <div key={title}>
-                  <div className="bg-blue-900 px-2 py-3 font-bold text-white">
-                    {title}
-                  </div>
-                  <div className="md-btn-nav-container">
-                    {categoryName.map(({ name, path }) => (
-                      <Link
-                        key={name}
-                        to={path}
-                        className="md-btn-nav"
-                        onClick={() =>
-                          sideMenuR
-                            ? setSideMenuR((prevActiveMenu) => !prevActiveMenu)
-                            : ""
-                        }>
-                        {name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
+            <MobileMainMenu />
             {loginAuth && (
               <div>
                 <Link
@@ -75,7 +52,8 @@ export const SideBarMenu = () => {
                   onClick={() => {
                     localStorage.clear();
                     setSideMenuR((prevActiveMenu) => !prevActiveMenu);
-                  }}>
+                  }}
+                >
                   <p>Logout</p>
                 </Link>
               </div>

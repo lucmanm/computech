@@ -1,8 +1,8 @@
 import React from "react";
 import aioimg from "../assets/img/aioimg.jpg";
-import { icons } from "../assets/data/data";
+import { defaultIcon } from "../assets/data/data";
 export const Cart = () => {
-  const { deleteIcon } = icons;
+  const { deleteIcon } = defaultIcon;
   return (
     <>
       {/* Mobile, md & Desktop */}
