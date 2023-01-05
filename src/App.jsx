@@ -32,7 +32,7 @@ function App() {
   const { pathname } = location;
 
   return (
-    <div className="border-2 border-black bg-gray-100">
+    <div className="bg-gray-100">
       <Header />
       <SearchProducts />
       <LsideBarMenu />
