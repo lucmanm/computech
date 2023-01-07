@@ -25,7 +25,7 @@ import { PageNotFound } from "../pages/frontend/Pages/PageNotFound";
 import { SideBarMenu } from "../pages/frontend/menu/SideBarMenu";
 import { useStateContext } from "../pages/frontend/contexts/ContextProvider";
 import { LsideBarMenu } from "../pages/frontend/menu/LsideBarMenu";
-
+import { MainSlider } from "../pages/frontend/components/MainSlider";
 function App() {
   const { loggedIn } = useStateContext;
   const location = useLocation();
@@ -34,6 +34,7 @@ function App() {
   return (
     <div className="bg-gray-100">
       <Header />
+      <MainSlider />
       <SearchProducts />
       <LsideBarMenu />
       <SideBarMenu />
