@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import CompuTechLogo from "../assets/img/CompuTechLogo.png";
 import { defaultIcon } from "../assets/data/data";
-import { TopNavigation } from "./TopNavigation";
+import { TopNavigation } from ".";
 import { MainMenu } from "./../menu/MainMenu";
 import { useStateContext } from "../contexts/ContextProvider";
 
@@ -12,7 +12,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-800 bg-white shadow-md">
+      <div className="sticky top-0 z-800 mb-6 bg-white shadow-md">
         <TopNavigation />
         <div className="py-2 desktop:container">
           <div className="flex flex-row flex-wrap">

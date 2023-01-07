@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../pages/frontend/Header";
+import { Header } from "../pages/frontend/header/";
 import { Products } from "../pages/frontend/";
 import { FooterInfo } from "../pages/frontend/footer/FooterInfo";
 import Subscribe from "../pages/frontend/footer/Subscribe";
@@ -26,6 +26,7 @@ import { SideBarMenu } from "../pages/frontend/menu/SideBarMenu";
 import { useStateContext } from "../pages/frontend/contexts/ContextProvider";
 import { LsideBarMenu } from "../pages/frontend/menu/LsideBarMenu";
 import { MainSlider } from "../pages/frontend/components/MainSlider";
+
 function App() {
   const { loggedIn } = useStateContext;
   const location = useLocation();
