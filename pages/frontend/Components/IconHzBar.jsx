@@ -4,8 +4,13 @@ import { mobIcons } from "../assets/data/data";
 import { useStateContext } from "../contexts/ContextProvider";
 
 export const IconHzBar = () => {
-  const { sideMenuR, setSideMenuR, leftSideBar, setLeftSideBar } =
-    useStateContext();
+  const {
+    sideMenuR,
+    setSideMenuR,
+    leftSideBar,
+    setLeftSideBar,
+    clickMenuHandler,
+  } = useStateContext();
 
   const { homeIc, personIc, shopIc, searchIc, menuIc } = mobIcons;
   return (
@@ -41,7 +46,7 @@ export const IconHzBar = () => {
         </NavLink>
         <NavLink
           className="btn-icon btn-primary grow py-3"
-          onClick={() => setSideMenuR((prevActiveMenu) => !prevActiveMenu)}
+          onClick={() => clickMenuHandler("rightMenu")}
           to="#"
         >
           <div className="mx-auto w-fit">{menuIc}</div>

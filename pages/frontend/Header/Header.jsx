@@ -7,7 +7,7 @@ import { MainMenu } from "./../menu/MainMenu";
 import { useStateContext } from "../contexts/ContextProvider";
 
 export const Header = () => {
-  const { setLeftSideBar } = useStateContext();
+  const { clickMenuHandler } = useStateContext();
   const { cartIcon, menuIc } = defaultIcon;
 
   return (
@@ -47,7 +47,7 @@ export const Header = () => {
                 <MainMenu />
                 <button
                   className="right-0 z-900 cursor-pointer text-blue-900 focus:text-blue-700 desktop:hidden"
-                  onClick={() => setLeftSideBar(true)}
+                  onClick={() => clickMenuHandler("leftMenu")}
                 >
                   {menuIc}
                 </button>

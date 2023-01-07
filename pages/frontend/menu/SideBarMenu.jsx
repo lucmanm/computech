@@ -5,14 +5,14 @@ import { menu } from "./../assets/data/data";
 import { Link, NavLink } from "react-router-dom";
 import { MobileMainMenu } from "./../menu/MobileMainMenu";
 export const SideBarMenu = () => {
-  const { loginAuth, sideMenuR, setSideMenuR } = useStateContext();
+  const { loginAuth, clickMenu, setSideMenuR } = useStateContext();
 
   return (
     <>
       <div
         className={`fixed top-0 right-0 z-900 h-full ${
-          sideMenuR ? "w-2/3" : "w-0"
-        } overflow-hidden  bg-gray-100 pb-14 duration-100`}
+          clickMenu.rightMenu ? "w-2/3" : "w-0"
+        } overflow-hidden  bg-gray-100 pb-14 duration-100 desktop:hidden`}
       >
         <div className="bg-blue-900 px-2 py-3 font-bold text-white">MENU</div>
         {loginAuth && (
@@ -29,11 +29,11 @@ export const SideBarMenu = () => {
                 to={`${path}`}
                 key={path}
                 className="md-btn-nav"
-                onClick={() =>
-                  sideMenuR
-                    ? setSideMenuR((prevActiveMenu) => !prevActiveMenu)
-                    : ""
-                }
+                // onClick={() =>
+                //   sideMenuR
+                //     ? setSideMenuR((prevActiveMenu) => !prevActiveMenu)
+                //     : ""
+                // }
               >
                 <span className="capatilize">{name}</span>
               </NavLink>

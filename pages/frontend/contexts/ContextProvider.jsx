@@ -1,10 +1,13 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 const StateContext = createContext();
-
+const initialState = {
+  leftMenu: false,
+  rightMenu: false,
+};
 export const ContextProvider = ({ children }) => {
   const [sideMenuR, setSideMenuR] = useState(false);
   const [leftSideBar, setLeftSideBar] = useState(false);
-  const [screenSize, setScreenSize] = useState(undefined);
+  const [clickMenu, setClickMenu] = useState(initialState);
   const [loggedIn, setLoggedIn] = useState(false);
   const loginAuth = localStorage.getItem("auth");
 
@@ -16,6 +19,22 @@ export const ContextProvider = ({ children }) => {
     }
   }, []);
 
+  const clickMenuHandler = (clicked) => {
+    if (clicked === "rightMenu") {
+      if (clickMenu[clicked] === false) {
+        setClickMenu({ leftMenu: false, rightMenu: true });
+      } else {
+        setClickMenu({ leftMenu: false, rightMenu: false });
+      }
+    } else {
+      if (clickMenu[clicked] === false) {
+        setClickMenu({ leftMenu: true, rightMenu: false });
+      } else {
+        setClickMenu({ leftMenu: false, rightMenu: false });
+      }
+    }
+  };
+
   return (
     <StateContext.Provider
       value={{
@@ -23,8 +42,9 @@ export const ContextProvider = ({ children }) => {
         setSideMenuR,
         leftSideBar,
         setLeftSideBar,
-        screenSize,
-        setScreenSize,
+        clickMenu,
+        setClickMenu,
+        clickMenuHandler,
         loggedIn,
         setLoggedIn,
         loginAuth,
