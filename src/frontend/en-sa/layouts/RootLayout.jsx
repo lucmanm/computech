@@ -1,11 +1,12 @@
 import React from "react";
 import { Header } from "./header";
 import { FooterInfo, Subscribe } from "./footer";
-export const RootLayout = ({ children }) => {
+import { Outlet } from "react-router-dom";
+export const RootLayout = () => {
   return (
     <>
       <Header />
-      {children}
+      <Outlet />
       <Subscribe />
       <FooterInfo />
     </>

@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import aioimg from "../assets/img/aioimg.jpg";
+import aioimg from "../../../assets/img/aioimg.jpg";
 
 export const ProductPreview = () => {
   const { prodId } = useParams();

@@ -1,24 +1,23 @@
 import React from "react";
-import { RootLayout } from "./frontend/en-sa/layouts/RootLayout";
-import { Banners, MainSlider } from "./frontend/en-sa/components";
-import { Products, Cart } from "./frontend/en-sa/pages";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { RootLayout, MobileLayout, FrontPage } from "./frontend/en-sa/layouts/";
+import { Cart, PageNotFound, ProductPreview } from "./frontend/en-sa/pages";
+import { Login } from "./frontend/en-sa/pages/login";
+import { Route, Routes } from "react-router-dom";
 import { useStateContext } from "./frontend/en-sa/contexts/ContextProvider";
-import { MobileLayout } from "./frontend/en-sa/layouts/MobileLayout";
 const App = () => {
   // const { loggedIn } = useStateContext();
-  const location = useLocation();
-  const { pathname } = location;
+
   return (
     <div className="bg-gray-100">
-      <RootLayout>
-        {pathname === "/" && <MainSlider />}
-        {pathname === "/" && <Products />}
-        {pathname === "/" && <Banners />}
-        <Routes>
-          <Route path="cart" element={<Cart />} />
-        </Routes>
-      </RootLayout>
+      <Routes>
+        <Route path="/" element={<RootLayout />}>
+          <Route path="/" element={<FrontPage />} />
+          <Route path="/products/:prodId" element={<ProductPreview />} />
+          <Route path="/:loginId/*" element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
       <MobileLayout />
     </div>
   );
