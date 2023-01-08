@@ -5,7 +5,7 @@ import { accountMenuTitles } from "../../../../assets/data/data";
 import { useStateContext } from "../../contexts/ContextProvider";
 export const AccountMenu = () => {
   const { sideMenuR, setSideMenuR } = useStateContext();
-  const activeLink = "desktop:nav-active";
+  const activeLink = "desktop:btn-nav-active";
   const normalLink = "btn-nav";
   return (
     <>
@@ -34,8 +34,7 @@ export const AccountMenu = () => {
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
               onClick={() =>
                 sideMenuR && setSideMenuR((prevActiveMenu) => !prevActiveMenu)
-              }
-            >
+              }>
               {icon}
               <span className="capatilize">{name}</span>
             </NavLink>

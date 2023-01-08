@@ -2,23 +2,26 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import aioimg from "../../../assets/img/aioimg.jpg";
-
+import { useFetchApi } from "../hooks/useFetchApi";
 export const ProductPreview = () => {
   const { prodId } = useParams();
-  const [prod, setProd] = useState({});
-  const apiUrl = `https://dummyjson.com/products/${prodId}`;
+  const { products } = useFetchApi({
+    apiIdUrl: `https://dummyjson.com/products/${prodId}`,
+  });
+  // const [prod, setProd] = useState({});
+  // const apiUrl = `https://dummyjson.com/products/${prodId}`;
 
-  const apiFitch = async () => {
-    const response = await axios.get(apiUrl);
-    const responseData = await response.data;
-    setProd(responseData);
-  };
+  // const apiFitch = async () => {
+  //   const response = await axios.get(apiUrl);
+  //   const responseData = await response.data;
+  //   setProd(responseData);
+  // };
 
-  useEffect(() => {
-    apiFitch();
-  }, []);
-
-  const { id, description, brand, price } = prod;
+  // useEffect(() => {
+  //   apiFitch();
+  // }, []);
+  console.log(products);
+  const { id, description, brand, price } = products;
 
   return (
     <>

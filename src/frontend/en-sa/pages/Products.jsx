@@ -1,32 +1,16 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { defaultIcon } from "../../../assets/data/data";
+import { useFetchApi } from "../hooks/useFetchApi";
 export const Products = () => {
-  const [prod, setProd] = useState([]);
-  const apiUrl = "https://dummyjson.com/products";
-
-  const apiFitch = async () => {
-    const response = await axios(apiUrl);
-    const responseData = await response.data;
-    setProd(responseData.products);
-  };
-
-  // const apiFitch = async () => {
-  //   const response = await fetch(apiUrl);
-  //   const responseData = await response.json();
-  //   setProd(responseData.products);
-  // };
-
-  useEffect(() => {
-    apiFitch();
-  }, []);
-
+  const { products } = useFetchApi({
+    apiUrl: "https://dummyjson.com/products",
+  });
   const { heartIcon, cartIcon, compare } = defaultIcon;
 
   return (
     <div className="relative my-5 mx-2 grid h-fit grid-cols-2 justify-evenly gap-3 md:grid-cols-3 desktop:container desktop:grid-cols-5">
-      {prod
+      {products
         .slice(5, 10)
         .map(
           ({ id, title, description, price, category, images: [image1] }) => (
