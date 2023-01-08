@@ -1,4 +1,4 @@
-// /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
   content: [
@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     screens: {
       mobile: "640",
-      tablet: "768px",
+      md: "768px",
       desktop: "1280px",
     },
     container: {
@@ -38,20 +38,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        Mont: ["Montserrat", "sans-serif"],
+        monts: ["Montserrat", "sans-serif"],
+        cairo: ["Cairo", "sans-serif"],
       },
-      // backgroundColor: {
-      //   primary: "#1E3A8A",
-      //   secondary: "#1D4ED8",
-      //   success: "198754",
-      //   danger: "D73444",
-      //   warning: "FFC107",
-      //   info: "#0DCAF0",
-      //   light: "#F8F9FA",
-      //   dark: "#212529",
-      //   "light-gray": "#F7F7F7",
-      //   "half-transparent": "rgba(0, 0, 0, 0.5)",
-      // },
       colors: {
         primary: {
           light: "#1D4ED8",
@@ -65,6 +54,30 @@ module.exports = {
         light: "#F8F9FA",
         dark: "#212529",
         "light-gray": "#F7F7F7",
+      },
+      minWidth: {
+        5: "1.25rem",
+        16: "4rem",
+      },
+      maxWidth: {
+        14: "3.5rem",
+        20: "5rem",
+        28: "7rem",
+      },
+      zIndex: {
+        100: "100",
+        200: "200",
+        300: "300",
+        400: "400",
+        500: "500",
+        600: "600",
+        700: "700",
+        800: "800",
+        900: "900",
+        1000: "1000",
+      },
+      height: {
+        38: "9.5rem",
       },
     },
   },

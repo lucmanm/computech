@@ -1,17 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .btn {
-    @apply w-fit flex-initial rounded-md border border-transparent py-1 px-4 text-sm font-medium;
+/* @layer base {
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="text"],
+  input[type="week"],
+  textarea {
+    @apply text-base;
   }
+} */
+
+@layer components {
+  html {
+    @apply font-monts text-xs leading-normal selection:bg-blue-700 selection:text-white desktop:text-sm;
+  }
+  /* Buttons */
+  .btn {
+    @apply cursor-pointer justify-center rounded-md py-3 px-3 text-sm font-medium;
+  }
+
+  .btn-icon {
+    @apply cursor-pointer justify-center py-1 px-1 font-medium;
+  }
+
   .btn-primary {
     @apply bg-blue-900  text-white hover:bg-blue-700;
   }
   .btn-danger {
     @apply bg-red-700 text-white hover:bg-red-900;
+  }
+  /* Navigations & Menu */
+  .btn-nav-title {
+      @apply bg-blue-900 px-2 py-3 font-bold text-white uppercase;
+  }
+
+  .btn-nav-container{
+    @apply flex w-full flex-col overflow-hidden;
+  }
+  .btn-nav {
+    @apply flex items-center gap-2 pl-4 pt-2 pb-2 w-full border-b border-b-gray-300 bg-gray-200 px-4 py-3 font-medium text-gray-600 hover:bg-blue-700 hover:text-white;
+  }
+  /* Desktop Navigation Menu */
+  .btn-nav-active {
+    @apply flex items-center gap-2 pl-4 pt-2 pb-2 text-white  bg-blue-700;
+  }
+  
+  /* .input {
+    @apply rounded-md border-gray-300 py-2 px-3 shadow-sm focus:border-blue-900 focus:ring-blue-900;
+  } */
+
+  .card {
+    @apply flex grow flex-col rounded-md border border-blue-900 bg-white p-2 md:shadow md:shadow-slate-400;
+  }
+  .card-title {
+    @apply mb-2 rounded-md bg-blue-900 p-2 font-bold text-white;
+  }
+
+  .tw-typo {
+    @apply prose prose-h1:m-0 prose-h1:text-base prose-h1:font-semibold prose-h1:line-clamp-2 prose-p:m-0 prose-p:text-2xl prose-p:font-bold;
+  }
+  .tw-typo-product {
+    @apply prose p-2 prose-h1:m-0 prose-h1:text-xl prose-h1:font-semibold prose-table:m-0 prose-th:text-base prose-img:m-0 desktop:p-0 desktop:prose-h1:text-3xl;
   }
 }
