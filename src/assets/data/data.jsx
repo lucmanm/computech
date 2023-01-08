@@ -140,7 +140,7 @@ export const accountMenuTitles = [
 export const menu = [
   {
     name: "Login or Register",
-    path: "/login",
+    path: "/signin",
     icon: <CgProfile />,
   },
   {

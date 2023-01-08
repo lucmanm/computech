@@ -1,18 +1,12 @@
 import React from "react";
-import {
-  NavLink,
-  Route,
-  Routes,
-  useParams,
-  useLocation,
-} from "react-router-dom";
-import { SignIn, Register } from ".";
-import { PageNotFound } from "../PageNotFound";
+import { NavLink, useParams, useLocation, Outlet } from "react-router-dom";
+
 import { useStateContext } from "../../contexts/ContextProvider";
 
 export const Login = () => {
   const { pathname } = useLocation();
   const { loginId } = useParams();
+
   const activeLink =
     "mt-2 block rounded-sm bg-white p-5 text-center font-medium shadow font-bold text-blue-900 ring-2 ring-blue-900";
   const normalLink =
@@ -29,8 +23,7 @@ export const Login = () => {
                 className={({ isActive }) =>
                   isActive ? activeLink : normalLink
                 }
-                to="/signin"
-              >
+                to="/signin">
                 <span>Login</span>
                 <p className="mt-1 text-gray-600">
                   Use a permanent address where you can receive mail.
@@ -42,8 +35,7 @@ export const Login = () => {
                 className={({ isActive }) =>
                   isActive ? activeLink : normalLink
                 }
-                to="/register"
-              >
+                to="/register">
                 <span>Register</span>
                 <p className="mt-1 text-gray-600">
                   if you don't have an account. Create now!
@@ -54,8 +46,8 @@ export const Login = () => {
         </div>
         {/* className='bg-white ring-2 focus:ring-blue-900 rounded-sm p-5 drop-shadow-md font-medium' */}
         <div>
-          <Routes>
-            {pathname === "/signin" ? (
+          <Outlet />
+          {/* {pathname === "/signin" ? (
               <Route index element={<SignIn />} />
             ) : (
               <Route path="*" element={<PageNotFound />} />
@@ -64,8 +56,7 @@ export const Login = () => {
               <Route index element={<Register />} />
             ) : (
               <Route path="*" element={<PageNotFound />} />
-            )}
-          </Routes>
+            )} */}
         </div>
       </div>
     </>

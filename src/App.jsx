@@ -8,7 +8,7 @@ import {
   Orders,
   WishList,
 } from "./frontend/en-sa/pages/account";
-import { Login } from "./frontend/en-sa/pages/login";
+import { Login, Register, SignIn } from "./frontend/en-sa/pages/login";
 import { Route, Routes } from "react-router-dom";
 import { useStateContext } from "./frontend/en-sa/contexts/ContextProvider";
 const App = () => {
@@ -20,7 +20,12 @@ const App = () => {
         <Route path="/" element={<RootLayout />}>
           <Route path="/" element={<FrontPage />} />
           <Route path="/products/:prodId" element={<ProductPreview />} />
-          <Route path="/:loginId/*" element={<Login />} />
+
+          <Route element={<Login />}>
+            <Route path="signin" element={<SignIn />} />
+            <Route path="register" element={<Register />} />
+          </Route>
+
           <Route path="/cart" element={<Cart />} />
           <Route path="account" element={<AccountLayout />}>
             <Route index element={<Profile />} />
@@ -28,8 +33,8 @@ const App = () => {
             <Route path="orders" element={<Orders />} />
             <Route path="wishList" element={<WishList />} />
           </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Route>
-        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <MobileLayout />
     </div>
