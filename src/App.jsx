@@ -1,6 +1,13 @@
 import React from "react";
 import { RootLayout, MobileLayout, FrontPage } from "./frontend/en-sa/layouts/";
 import { Cart, PageNotFound, ProductPreview } from "./frontend/en-sa/pages";
+import {
+  AccountLayout,
+  Profile,
+  Address,
+  Orders,
+  WishList,
+} from "./frontend/en-sa/pages/account";
 import { Login } from "./frontend/en-sa/pages/login";
 import { Route, Routes } from "react-router-dom";
 import { useStateContext } from "./frontend/en-sa/contexts/ContextProvider";
@@ -15,6 +22,12 @@ const App = () => {
           <Route path="/products/:prodId" element={<ProductPreview />} />
           <Route path="/:loginId/*" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="account" element={<AccountLayout />}>
+            <Route index element={<Profile />} />
+            <Route path="address" element={<Address />} />
+            <Route path="orders" element={<Orders />} />
+            <Route path="wishList" element={<WishList />} />
+          </Route>
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>

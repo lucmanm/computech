@@ -42,10 +42,12 @@ export const ContextProvider = ({ children }) => {
         clickMenu,
         setClickMenu,
         clickMenuHandler,
+        initialState,
         loggedIn,
         setLoggedIn,
         loginAuth,
-      }}>
+      }}
+    >
       {children}
     </StateContext.Provider>
   );

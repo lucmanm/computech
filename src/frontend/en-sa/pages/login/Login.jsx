@@ -17,7 +17,7 @@ export const Login = () => {
     "mt-2 block rounded-sm bg-white p-5 text-center font-medium shadow font-bold text-blue-900 ring-2 ring-blue-900";
   const normalLink =
     "mt-2 block rounded-sm bg-white p-5 text-center font-medium shadow ";
-  console.log(pathname, loginId);
+
   return (
     <>
       <div className="grid desktop:container desktop:grid-cols-2 ">
