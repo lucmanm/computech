@@ -12,7 +12,8 @@ export const RightMenu = () => {
       <div
         className={`fixed top-0 right-0 z-900 h-full ${
           clickMenu.rightMenu ? "w-2/3" : "w-0"
-        } overflow-hidden  bg-gray-100 pb-14 duration-100 desktop:hidden`}>
+        } overflow-scroll  bg-gray-100 pb-14 duration-100 desktop:hidden`}
+      >
         <div className="bg-blue-900 px-2 py-3 font-bold text-white">MENU</div>
         {loginAuth && (
           // #LoggedInOnly
@@ -22,12 +23,12 @@ export const RightMenu = () => {
         )}
         <div className="flex flex-col">
           {/* Sub Categories Loops here. */}
-          <div className="md-btn-nav-container">
+          <div className="btn-nav-container">
             {menu.map(({ name, path }) => (
               <NavLink
                 to={`${path}`}
                 key={path}
-                className="md-btn-nav"
+                className="btn-nav"
                 // onClick={() =>
                 //   sideMenuR
                 //     ? setSideMenuR((prevActiveMenu) => !prevActiveMenu)
@@ -48,7 +49,8 @@ export const RightMenu = () => {
                 onClick={() => {
                   localStorage.clear();
                   setSideMenuR((prevActiveMenu) => !prevActiveMenu);
-                }}>
+                }}
+              >
                 <p>Logout</p>
               </Link>
             </div>

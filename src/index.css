@@ -42,13 +42,21 @@
     @apply bg-red-700 text-white hover:bg-red-900;
   }
   /* Navigations & Menu */
-  .md-btn-nav-container {
-    @apply flex w-full flex-col overflow-hidden;
-  }
-  .md-btn-nav {
-    @apply w-full border-b border-b-gray-300 bg-gray-200 px-4 py-3 font-medium text-gray-600 hover:bg-blue-700 hover:text-white;
+  .btn-nav-title {
+      @apply bg-blue-900 px-2 py-3 font-bold text-white uppercase;
   }
 
+  .btn-nav-container{
+    @apply flex w-full flex-col overflow-hidden;
+  }
+  .btn-nav {
+    @apply flex items-center gap-2 pl-4 pt-2 pb-2 w-full border-b border-b-gray-300 bg-gray-200 px-4 py-3 font-medium text-gray-600 hover:bg-blue-700 hover:text-white;
+  }
+  /* Desktop Navigation Menu */
+  .btn-nav-active {
+    @apply flex items-center gap-2 pl-4 pt-2 pb-2 text-white  bg-blue-700;
+  }
+  
   /* .input {
     @apply rounded-md border-gray-300 py-2 px-3 shadow-sm focus:border-blue-900 focus:ring-blue-900;
   } */

@@ -14,7 +14,7 @@ export const TopNavigation = () => {
             {loginAuth ? (
               <Link
                 className="flex flex-row flex-wrap items-center gap-2 border-r-2 px-2  hover:text-blue-700"
-                to="/account/"
+                to="/account"
               >
                 <span>{personIcon}</span>
                 <p>My Account</p>
